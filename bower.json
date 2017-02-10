@@ -1,0 +1,18 @@
+{
+  "name": "sabio.github.io",
+  "homepage": "https://github.com/sabio/sabio.github.io",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "3.1.0",
+    "normalize": "1.1.0"
+  }
+}
