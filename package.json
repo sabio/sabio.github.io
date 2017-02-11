@@ -1,0 +1,25 @@
+{
+  "name": "sabio.github.io",
+  "version": "1.0.0",
+  "description": "Personal web site",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp-uglify": "^2.0.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabio/sabio.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sabio/sabio.github.io/issues"
+  },
+  "homepage": "https://github.com/sabio/sabio.github.io#readme"
+}
