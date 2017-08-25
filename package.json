@@ -1,0 +1,30 @@
+{
+  "name": "sabio.github.io",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^2.0.1",
+    "css-loader": "^0.28.5",    
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.5.5"
+  },
+  "devDependencies": {
+    "extract-text-webpack-plugin": "2.0.0-beta.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabio/sabio.github.io.git"
+  },
+  "author": "bugdeveloper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sabio/sabio.github.io/issues"
+  },
+  "homepage": "https://github.com/sabio/sabio.github.io#readme"
+}
