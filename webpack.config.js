@@ -1,10 +1,11 @@
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+var jQuery = require("jquery")
 
 
 const config = {
-	entry: ['./bower_components/jquery/dist/jquery.min.js', './src/js/script.js', './src/css/style.scss'],
+	entry: ['./src/js/script.js', './src/css/style.scss'],
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'js/script.js'
@@ -31,7 +32,12 @@ const config = {
 		new ExtractTextPlugin({ // define where to save the file
 			filename: 'css/style.css', //'css/[name].css'
 			allChunks: true
-		})
+		}),
+		new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
+            "window.jQuery": "jquery"
+        })
 	]
 };
 
