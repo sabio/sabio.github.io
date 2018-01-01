@@ -42,7 +42,7 @@ header nav ul li a {
   text-decoration: none;
   transition: 0.3s; }
 
-header nav ul li a:hover {
+header nav ul li a :hover {
   background: #2980b9;
   cursor: pointer; }
 
