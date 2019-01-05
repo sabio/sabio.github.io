@@ -1,36 +1,43 @@
 const path = require('path');
 const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const jQuery = require("jquery")
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 
 const config = {
-	entry: ['./src/js/script.js', './src/css/style.scss'],
+	mode: 'production',
+	entry: ['./src/js/script.js'],
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'js/script.js'
 	},
 	module: {
-		rules: [
-			{ // regular css files
-				test: /\.css$/,
-				loader: ExtractTextPlugin.extract({
-					loader: 'css-loader?importLoaders=1',
-				}),
-			},
-			{ // sass / scss loader for webpack
-				test: /\.(sass|scss)$/,
-				loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
-			}
+    rules: [
+      {
+          test: /\.css$/,
+          use: [{ loader: 'style-loader' }, { loader: 'css-loader' }]
+      },
+			{
+      test: /\.scss$/,
+      use: [
+          "style-loader", // creates style nodes from JS strings
+          "css-loader", // translates CSS into CommonJS
+          "sass-loader" // compiles Sass to CSS, using Node Sass by default
+      ]
+    }]
+  },
+	optimization: {
+		minimizer: [
+			new UglifyJsPlugin()
 		]
 	},
+	performance: {
+		hints: "warning",
+		maxEntrypointSize: 512000,
+		maxAssetSize: 512000
+  },
 	plugins: [
-		new webpack.optimize.UglifyJsPlugin(),
-		new ExtractTextPlugin({ // define where to save the file
-			filename: 'css/style.css', //'css/[name].css'
-			allChunks: true
-		}),
 		new webpack.ProvidePlugin({
         $: "jquery",
         jQuery: "jquery",
@@ -42,7 +49,5 @@ const config = {
   	])
 	]
 };
-
-
 
 module.exports = config;

@@ -1,8 +1,9 @@
 var $ = require("jquery")
+require('normalize.css')
+require("../scss/style.scss")
 
 
 $( document ).ready(function() {
-	console.log("HOLA MUNDO");
 	$('#btn-menu').on('click', function(){
 		var menu = $("nav");
 		//alert(menu.html());
