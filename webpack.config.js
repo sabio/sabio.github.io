@@ -1,7 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-var jQuery = require("jquery")
+const jQuery = require("jquery")
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 
 const config = {
@@ -12,9 +13,6 @@ const config = {
 	},
 	module: {
 		rules: [
-			/*
-			your other rules for JavaScript transpiling go in here
-			*/
 			{ // regular css files
 				test: /\.css$/,
 				loader: ExtractTextPlugin.extract({
@@ -34,10 +32,14 @@ const config = {
 			allChunks: true
 		}),
 		new webpack.ProvidePlugin({
-            $: "jquery",
-            jQuery: "jquery",
-            "window.jQuery": "jquery"
-        })
+        $: "jquery",
+        jQuery: "jquery",
+        "window.jQuery": "jquery"
+    }),
+		new CopyWebpackPlugin([
+	    { from: path.resolve(__dirname, 'src/docs'), to: path.resolve(__dirname, 'dist/docs') },
+			{ from: path.resolve(__dirname, 'src/imgs'), to: path.resolve(__dirname, 'dist/imgs') }
+  	])
 	]
 };
 
