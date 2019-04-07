@@ -8,7 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
-  resolve: {
+  resolve: { //Segun yo esto ni sirve
     extensions: ['.js', '.jsx']
   },
   module: {
