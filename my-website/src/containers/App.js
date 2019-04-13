@@ -14,16 +14,18 @@ class App extends React.Component{
     return(
       <Main>
         <Header />
-        <div>
+        <section>
           <QuienSoy />
           <EstudiosYExperiencia />
           <RedesSociales />
-        </div>
+        </section>
         <Footer />
       </Main>
     )
   }
 }
+/*
 
+*/
 
 export default App

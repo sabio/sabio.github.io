@@ -5,9 +5,9 @@ class MainBar extends React.Component{
 
   render(){
     return(
-      <div>
+      <section>
         <Menu />
-      </div>
+      </section>
     )
   }
 }

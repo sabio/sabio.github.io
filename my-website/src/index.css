@@ -1,22 +1,43 @@
-body{ 
+body{
   background-color: #e0e0e0;
 }
 
 
 #mainMenu{
-  border: 1px solid red;
-  display: flex;
-  padding: 0;
+  position: fixed;
+  top:0;
+  width: 100%;
 }
 
-#mainMenu li{
+#mainMenu ul{
+  background-color: #2586d7;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+#mainMenu ul li{
   text-align: center;
   flex-grow: 1;
   list-style: none;
-  background-color: green;
 }
 
+#mainMenu ul li a{
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: bolder;
+  padding-top: 15px;
+  padding-right: 0;
+  padding-bottom: 15px;
+  padding-left: 0;
+  text-decoration: none;
+  transition: all .2s;
+  width: 80%;
+}
 
-#mainMenu li:nth-child(2){
-  background-color: yellow;
+#mainMenu ul li a:hover{
+  background-color: #1f72b7;
+  width: 100%;
 }
