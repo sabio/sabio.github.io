@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-class QuienSoy extends React.Component{
+class Home extends React.Component{
 
   render(){
     return(
@@ -10,7 +10,7 @@ class QuienSoy extends React.Component{
         position: 'absolute',
         width: '100%'
       }}>
-        <h1>Aqui esta el Quien Soy </h1>
+        <h1>Aqui esta el HOME </h1>
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
@@ -21,4 +21,4 @@ class QuienSoy extends React.Component{
 }
 
 
-export default QuienSoy
+export default Home

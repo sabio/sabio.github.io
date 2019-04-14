@@ -1,13 +1,14 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 
 
 let Menu = () => (
   <nav id="mainMenu">
     <ul>
-      <li><a href="#">¿Quien soy?</a></li>
-      <li><a href="#">Estudios y Experiencia</a></li>
-      <li><a href="#">Redes sociales</a></li>
-      <li><a href="#">CV</a></li>
+      <li><Link to={`/`}>Home</Link></li>
+      <li><Link to={`/quiensoy`}>¿Quien soy?</Link></li>
+      <li><Link to={`/estYExp`}>Estudios y Experiencia</Link></li>
+      <li><Link to={`/redesSociales`}>Redes sociales</Link></li>     
     </ul>
   </nav>
 )
