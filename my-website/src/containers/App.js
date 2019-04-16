@@ -21,7 +21,6 @@ class App extends React.Component{
         <Router>
           <Route render={({ location }) => (
             <div>
-              <br />
               <Header />
               <div style={{marginTop: '35px'}}>
                 <TransitionGroup>
@@ -43,7 +42,6 @@ class App extends React.Component{
             </div>
           )}/>
         </Router>
-        <Footer />
       </Main>
     )
   }

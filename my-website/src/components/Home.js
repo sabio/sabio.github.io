@@ -5,16 +5,10 @@ class Home extends React.Component{
 
   render(){
     return(
-      <div style={{
-        backgroundColor: 'red', 
-        position: 'absolute',
-        width: '100%'
-      }}>
-        <h1>Aqui esta el HOME </h1>
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <div className="componentContainer componentContainer-home">
+      <div class="typewriter">
+        <h1>Welcome to my website. Please stalk me!</h1>
+      </div>
       </div>
     )
   }
