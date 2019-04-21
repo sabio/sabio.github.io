@@ -3,6 +3,50 @@ body{
 }
 
 
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes typing2 {
+  from { width: 0 }
+  to { width: 60% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+
+
+
+/* Transition stuff */
+.fade-enter {
+  left: 100%;
+}
+.fade-enter-active {
+  left: 0%;
+  transition: all 1000ms;
+}
+.fade-exit {
+  right: 0%;
+}
+.fade-exit-active {
+  right: 100%;
+  transition: all 1000ms;
+}
+
+
+
+
+
+
+
+
+
 /* Menu stuff */
 #mainMenu{
   position: fixed;
@@ -54,7 +98,7 @@ body{
 }
 
 .componentContainer-home{
-  background-image: url('../public/images/hola.jpg');
+  background-image: url('../public/images/homeBackground.jpg');
   background-size: 100% 100%;
 
   color: white;
@@ -67,31 +111,32 @@ body{
 
 
 
+.typewriter {
+  display: flex;
+  flex-direction: column;
+}
 
-
-
-/*  https://css-tricks.com/snippets/css/typewriter-effect/  */
-.typewriter h1 {
+.typewriter h1,   
+.typewriter h2 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
+  
+}
+
+.typewriter h1{
   animation:
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+.typewriter h2{
+  text-align: center;
+  animation:
+    typing2 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
 
 
@@ -104,24 +149,39 @@ body{
 
 
 
-
-
-
-
-
-
-/* Transition stuff */
-.fade-enter {
-  left: 100%;
+.componentContainer-quiensoy{
+  align-items: baseline;
+  background-color: black;
+  background-size: 100% 100%;
+  color: #eff0f2;
+  display: flex;
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 20px;
+  justify-content: center;
 }
-.fade-enter-active {
-  left: 0%;
-  transition: all 1000ms;
+
+
+.componentContainer-quiensoy section {
+  text-align: justify;
+  margin-top: 30px;
+  width: 80%;
 }
-.fade-exit {
-  right: 0%;
+
+.componentContainer-quiensoy section h2{
+  text-align: center;
 }
-.fade-exit-active {
-  right: 100%;
-  transition: all 1000ms;
+
+.componentContainer-quiensoy section p img {
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+  width: 180px;
+}
+
+.componentContainer-quiensoy section p strong{
+  font-weight: bolder;
+}
+
+.componentContainer-quiensoy section p a:visited{
+  color:#d6e3fc;
 }

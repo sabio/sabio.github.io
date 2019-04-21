@@ -5,11 +5,11 @@ class QuienSoy extends React.Component{
 
   render(){
     return(
-      <div className="componentContainer">
-      <section id="quiensoy" class="contenedor quiensoy">
-        <h1>
+      <div className="componentContainer componentContainer-quiensoy">
+      <section>
+        <h2>
           ¿Quién soy?
-        </h1>
+        </h2>
         <p>
           <img src="../../public/images/perfil.jpg"/>
           ¡Que ondas! Mi nombre es <strong>Armando Gómez</strong>, soy de Guadalajara Jalisco México, aunque nacido en Maracaibo Venezuela <em>(si, tengo ambas nacionalidades)</em>. Soy un ingeniero de software con un posgrado en Tecnologías de Información <em>(esta cool el papelito)</em> que le pica a algo llamado Python <em>(que disque esta feo porque su retrocompatibilidad y performance apestan)</em>, a Java <em>(que desde hace varios años dicen ya se va a morir que porque ya esta pinche viejo, porque lo adquirió Oracle, y además es lento segun eso)</em> y a PL/SQL <em>(el mismo diablo hecho lenguaje)</em>, y de vez en cuando a Javascript <em>(que disque es peligroso tener activada esa madre en el navegador, que esta feo porque en realidad no es OO y esta cabrón saber la diferencia entre null, NaN y undefined, y además <a target="_blank" href="https://www.gnu.org/philosophy/javascript-trap.en.html">Richard Stallman le tiene miedo</a>)</em>. He trabajado tambien con las bases de datos MySQL y Oracle <em>(que como no son NoSQL ya son obsoletas y ya nadie las debería usar)</em>.
