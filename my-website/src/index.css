@@ -135,8 +135,9 @@ body{
 .typewriter h2{
   text-align: center;
   animation:
-    typing2 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+    typing2 3.5s steps(30, end) 2s 1 normal backwards running ,
+    blink-caret .75s step-end 2s infinite normal backwards running ;
+ 
 }
 
 
