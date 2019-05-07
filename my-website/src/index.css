@@ -152,7 +152,7 @@ body{
 
 .componentContainer-quiensoy{
   align-items: baseline;
-  background-color: black;
+  background-color: #092d47;
   background-size: 100% 100%;
   color: #eff0f2;
   display: flex;
@@ -186,6 +186,37 @@ body{
 .componentContainer-quiensoy section p a:visited{
   color:#d6e3fc;
 }
+
+
+
+
+
+
+.componentContainer-estudios-y-experiencia{
+  align-items: baseline;
+  background-color: #092d47;
+  background-size: 100% 100%;
+  color: #eff0f2;
+  display: flex;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+}
+
+.componentContainer-estudios-y-experiencia section {
+  text-align: justify;
+  margin-top: 30px;
+  width: 80%;
+}
+
+.componentContainer-estudios-y-experiencia section h2{
+  text-align: center;
+}
+
+
+
+
+
 
 
 

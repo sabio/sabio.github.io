@@ -7,9 +7,9 @@ class Home extends React.Component{
     return(
       <div className="componentContainer componentContainer-home">
       <div className="typewriter">
-        <h1>Welcome to my website!</h1> 
+        <h1>¡Bienvenid@s a mi website!</h1>
         <br />
-        <h2>Go ahead and check it out!</h2>
+        <h2>¡Pásele con confianza!</h2>
       </div>
       </div>
     )

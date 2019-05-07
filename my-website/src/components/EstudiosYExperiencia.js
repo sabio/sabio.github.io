@@ -1,6 +1,24 @@
 import React from 'react'
 
 
-let EstudiosYExperiencia = () => <h1>Estudios y experiencia</h1>
+class EstudiosYExperiencia extends React.Component{
+
+  render(){
+    return(
+      <div className="componentContainer componentContainer-estudios-y-experiencia">
+      <section>
+        <h2>
+          Estudios y experiencia
+        </h2>
+        <p>
+          Pues todo lo relacionado a mis estudios y experiencia esta en mi CV <a href="../../public/docs/CVEsp.pdf" target="_blank">aqui</a>, y si lo que les interesa es en inglés
+          pues aquí esta esta otra <a href="../../public/docs/CVEng.pdf" target="_blank">liga</a>.
+        </p>
+      </section>
+      </div>
+    )
+  }
+}
+
 
 export default EstudiosYExperiencia
