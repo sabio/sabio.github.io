@@ -1,10 +1,10 @@
 import React from 'react'
 import Menu from './Menu'
 
-class MainBar extends React.Component{
 
-  render(){
-    return(
+class MainBar extends React.Component {
+  render() {
+    return (
       <section>
         <Menu />
       </section>
