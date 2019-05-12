@@ -7,7 +7,7 @@
     "watch": "webpack --watch",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development",
-    "test": "./node_modules/eslint/bin/eslint.js --ext .js --ext .jsx ."
+    "lint": "./node_modules/eslint/bin/eslint.js --ext .js --ext .jsx ."
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
     "babel-eslint": "^10.0.1",
     "image-webpack-loader": "^4.6.0",
     "normalize.css": "^8.0.1",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",

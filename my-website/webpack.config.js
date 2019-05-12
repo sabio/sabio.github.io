@@ -3,13 +3,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: './src/index.jsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
-  resolve: { //Segun yo esto ni sirve
-    extensions: ['.js', '.jsx']
+  resolve: { // Segun yo esto ni sirve
+    extensions: [
+      '.js',
+      '.jsx',
+    ],
   },
   module: {
     rules: [
@@ -17,12 +20,15 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
         use: {
-          loader: 'babel-loader'
-        }
+          loader: 'babel-loader',
+        },
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: [
+          'style-loader',
+          'css-loader',
+        ],
       },
       {
         test: /\.(gif|png|jpe?g|svg)$/i,
@@ -36,12 +42,12 @@ module.exports = {
             },
           },
         ],
-      }
-    ]
+      },
+    ],
   },
-  plugins:[
+  plugins: [
     new HtmlWebpackPlugin({
-      template: 'public/index.html'
-    })
-  ]
+      template: 'public/index.html',
+    }),
+  ],
 };
