@@ -1,7 +1,11 @@
 body{
   background-color: #e0e0e0;
+  font-size: 12px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
+  
 
 /* The typing effect */
 @keyframes typing {
@@ -93,22 +97,36 @@ body{
 
 .componentContainer{
   height: 100%;
-  width: 100%;
   position: absolute;
+  width: 100%
 }
 
 .componentContainer-home{
   background-image: url('../public/images/homeBackground.jpg');
   background-size: 100% 100%;
 
-  color: white;
+  color: #dbdbdb;
   display: flex;
   font-size: 25px;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
+.componentContainer-home img{
+  cursor: pointer;
+  margin-top: 50px;
+  transition: all .1s linear; 
+  width: 20vh;
+}
 
+.componentContainer-home img:hover{
+  transform: scale(1.1);
+}
+
+.componentContainer-home img:active{
+  transform: scale(.9);
+}
 
 
 .typewriter {
@@ -128,14 +146,14 @@ body{
 
 .typewriter h1{
   animation:
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+    typing 2s steps(25, end),
+    blink-caret .75s step-end 0s 3 normal forwards;
 }
 
 .typewriter h2{
   text-align: center;
   animation:
-    typing2 3.5s steps(30, end) 2s 1 normal backwards running ,
+    typing2 3s steps(30, end) 2.5s 1 normal backwards running ,
     blink-caret .75s step-end 2s infinite normal backwards running ;
 
 }
@@ -152,7 +170,7 @@ body{
 
 .componentContainer-quiensoy{
   align-items: baseline;
-  background-color: #092d47;
+  background-image: url('../public/images/quiensoyBackground.jpg');
   background-size: 100% 100%;
   color: #eff0f2;
   display: flex;
@@ -194,8 +212,8 @@ body{
 
 .componentContainer-estudios-y-experiencia{
   align-items: baseline;
-  background-color: #092d47;
-  background-size: 100% 100%;
+  background-image: url('../public/images/estyexpBackground.png');
+  background-repeat: repeat;
   color: #eff0f2;
   display: flex;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -215,6 +233,24 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+.componentContainer-redessociales{
+  align-items: baseline;
+  background-image: url('../public/images/redessocialesBackground.jpg');
+  background-size: 100% 100%;
+  color: #eff0f2;
+  display: flex;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+}
 
 
 

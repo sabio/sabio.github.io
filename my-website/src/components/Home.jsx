@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link, } from 'react-router-dom'
+import flechaImg from '../../public/images/flecha.png'
 
 
 const Home = () => (
@@ -8,6 +10,9 @@ const Home = () => (
       <br />
       <h2>¡Pásele con confianza!</h2>
     </div>
+    <Link to="/quiensoy">
+      <img src={flechaImg} />
+    </Link>
   </div>
 )
 

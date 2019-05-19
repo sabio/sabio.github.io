@@ -1,6 +1,9 @@
 import React from 'react'
 
 
-const RedesSociales = () => <h1>Redes sociales</h1>
-
+const RedesSociales = () => (
+    <div className="componentContainer componentContainer-redessociales">
+        redes sociales
+    </div>
+)
 export default RedesSociales
