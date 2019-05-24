@@ -28,7 +28,7 @@ const QuienSoy = () => (
         <em>
         (que disque es peligroso tener activada esa madre en el navegador, que esta feo
         porque en realidad no es OO y esta cabrón saber la diferencia entre null, NaN
-        y undefined, y además
+        y undefined, y además&nbsp;
           <a target="_blank" rel="noopener noreferrer" href="https://www.gnu.org/philosophy/javascript-trap.en.html">
             Richard Stallman le tiene miedo
           </a>

@@ -7,11 +7,10 @@ const Home = () => (
   <div className="componentContainer componentContainer-home">
     <div className="typewriter">
       <h1>¡Bienvenid@s a mi website!</h1>
-      <br />
       <h2>¡Pásele con confianza!</h2>
     </div>
     <Link to="/quiensoy">
-      <img src={flechaImg} />
+      <img alt="arrow" src={flechaImg} />
     </Link>
   </div>
 )

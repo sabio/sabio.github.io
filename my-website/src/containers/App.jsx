@@ -8,6 +8,7 @@ import QuienSoy from '../components/QuienSoy'
 import EstudiosYExperiencia from '../components/EstudiosYExperiencia'
 import RedesSociales from '../components/RedesSociales'
 import jsonExperiencia from '../../public/docs/experiencia'
+import jsonEstudios from '../../public/docs/estudios'
 
 
 const App = () => (
@@ -26,7 +27,16 @@ const App = () => (
                 <Switch location={location}>
                   <Route exact path="/" component={Home} />
                   <Route exact path="/quiensoy" component={QuienSoy} />
-                  <Route exact path="/estYExp" render={() => <EstudiosYExperiencia jsonExperiencia={jsonExperiencia} />} />
+                  <Route
+                    exact
+                    path="/estYExp"
+                    render={() => (
+                      <EstudiosYExperiencia
+                        jsonExperiencia={jsonExperiencia}
+                        jsonEstudios={jsonEstudios}
+                      />
+                    )}
+                  />
                   <Route exact path="/redesSociales" component={RedesSociales} />
                   <Route render={() => <div>Not Found</div>} />
                 </Switch>

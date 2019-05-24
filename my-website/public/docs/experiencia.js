@@ -22,16 +22,10 @@ const jsonExperiencia = [
         ],
       },
       {
-        description: 'Migración de varios sistemas viejos a Java EE 7.'
-      }
+        description: 'Migración de varios sistemas viejos a Java EE 7.',
+      },
     ],
   },
-
-
-
-
-
-
   {
     position: 'Software Developer',
     company: 'Bioxor',
@@ -64,6 +58,56 @@ const jsonExperiencia = [
           'Desarrollo de servicios REST para la comunicación entre la aplicación android y la base de datos.',
           'Desarrollo de un servidor TCP usando Node.js para la comunicación con las lavadoras.',
         ],
+      },
+    ],
+  },
+  {
+    position: 'Java Developer',
+    company: 'Atalaya Systems',
+    from: 'Marzo 2010',
+    to: 'Marzo 2013',
+    tasks: [
+      {
+        description: 'Desarrollo y mantenimiento de una aplicación web para el proceso de pre-inicialización de cuentas de crédito para bancos.',
+        details: [
+          'Desarrollo de módulos nuevos para la aplicación del banco con Java Servlet technology, JSP, Spring Framework y Hibernate.',
+          'Desarrollo de servicios REST.',
+          'Desarrollo de procedimientos almacenados en base de datos Oracle usando PL/SQL.',
+          'Desarrollo de reportes en JasperReports.',
+        ],
+      },
+    ],
+  },
+  {
+    position: 'PHP Developer',
+    company: 'Vitaminastudio',
+    from: 'Septiembre 2009',
+    to: 'Diciembre 2009',
+    tasks: [
+      {
+        description: 'Desarrollo de una aplicación web usando PHP, Ajax, JavaScript (JQuery) y MySQL.',
+      },
+    ],
+  },
+  {
+    position: 'Documentador y Developer',
+    company: 'Universidad de Guadalajara',
+    from: 'Septiembre 2008',
+    to: 'Febrero 2010',
+    tasks: [
+      {
+        description: 'Documentación en UML de diferentes sistemas de la Universidad de Guadalajara. Desarrollo de procedimientos almacenados en base de datos Oracle usando PL/SQL.',
+      },
+    ],
+  },
+  {
+    position: 'PHP Developer',
+    company: 'Instituto de información territorial del Estado de Jalisco',
+    from: 'Junio 2008',
+    to: 'Agosto 2010',
+    tasks: [
+      {
+        description: 'Desarrollo de un prototipo (un demo) para propósitos internos usando PHP, Javascript, MySQL y Google Maps.',
       },
     ],
   },

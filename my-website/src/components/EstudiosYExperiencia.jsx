@@ -1,61 +1,91 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 
-const EstudiosYExperiencia = (props) => {
+const EstudiosYExperiencia = ({ jsonExperiencia, jsonEstudios, }) => {
+  const experiencia = jsonExperiencia.map(item => (
+    <div className="position">
+      <h3>
+        {item.position}
+        -
+        {item.company}
+      </h3>
+      <p className="fromTo">
+        Desde:
+        {item.from}
+        <br />
+        Hasta:
+        {item.to}
+      </p>
+      <>
+        {item.tasks.map(task => (
+          <>
+            <p>
+              {task.description}
+            </p>
+            {task.details && (
+              <ul>
+                {task.details.map(detail => (
+                  <li>
+                    {detail}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </>
+        ))}
+      </>
+    </div>
+  ))
 
-  const dataFromJSON = props.jsonExperiencia.map((item, index)=>{
-    return (
-      <div className="position">
-        <h3>{item.position} - {item.company}</h3>
-        <p className="fromTo">
-          From: {item.from} 
-          <br />
-          To: {item.to}
-        </p>
-        <>
-        {item.tasks.map((task) => {
-          return (
-            <>
-              <p>
-                {task.description}
-              </p>
-            
-              {task.details && (
-                <ul>
-                  {task.details.map(detail => {
-                    return <li>{detail}</li>
-                  })}
-                </ul>
-              )}
-            
-              
-            </>
-          )
-        })}
-        </>
-      </div>
-    )
-  })
+  const estudios = jsonEstudios.map(item => (
+    <div className="position">
+      <h3>
+        {item.course}
+        -
+        {item.school}
+      </h3>
+      <p className="fromTo">
+        Desde:
+        {item.from}
+        <br />
+        Hasta:
+        {item.to}
+      </p>
+    </div>
+  ))
 
-  return(
+  return (
     <div className="componentContainer componentContainer-estudios-y-experiencia">
       <section>
         <h2>
           Estudios y experiencia
         </h2>
         <p>
-          A continuación se muestra mi experiencia todo lo relacionado a mis estudios y experiencia esta en mi CV
+          A continuación se muestra todo lo relacionado a mis estudios y experiencia.
+          Si lo que buscas en un CV tradicional pues dale clic&nbsp;
           <a href="../../public/docs/CVEsp.pdf" target="_blank">aqui</a>
-          , y si lo que les interesa es en inglés pues aquí esta esta otra
+          , y si lo quieres en inglés pues aquí está esta otra&nbsp;
           <a href="../../public/docs/CVEng.pdf" target="_blank">liga</a>
           .
         </p>
         <>
-          {dataFromJSON}
+          <h3>Experiencia</h3>
+          {experiencia}
+        </>
+        <br />
+        <>
+          <h3>Estudios</h3>
+          {estudios}
         </>
       </section>
     </div>
   )
 }
+
+EstudiosYExperiencia.propTypes = {
+  jsonExperiencia: PropTypes.node.isRequired,
+  jsonEstudios: PropTypes.node.isRequired,
+};
 
 export default EstudiosYExperiencia
