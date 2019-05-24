@@ -1,5 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import cvIngles from '../../public/docs/CVEng.pdf'
+import cvEspanol from '../../public/docs/CVEsp.pdf'
 
 
 const EstudiosYExperiencia = ({ jsonExperiencia, jsonEstudios, }) => {
@@ -64,9 +66,9 @@ const EstudiosYExperiencia = ({ jsonExperiencia, jsonEstudios, }) => {
         <p>
           A continuación se muestra todo lo relacionado a mis estudios y experiencia.
           Si lo que buscas en un CV tradicional pues dale clic&nbsp;
-          <a href="../../public/docs/CVEsp.pdf" target="_blank">aqui</a>
+          <a href={cvEspanol} target="_blank">aqui</a>
           , y si lo quieres en inglés pues aquí está esta otra&nbsp;
-          <a href="../../public/docs/CVEng.pdf" target="_blank">liga</a>
+          <a href={cvIngles} target="_blank">liga</a>
           .
         </p>
         <>

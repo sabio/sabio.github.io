@@ -1,53 +1,52 @@
-const path = require('path');
-const webpack = require('webpack');
-const jQuery = require("jquery")
-const CopyWebpackPlugin = require('copy-webpack-plugin')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-
-const config = {
-	mode: 'production',
-	entry: ['./src/js/script.js'],
-	output: {
-		path: path.resolve(__dirname, 'dist'),
-		filename: 'js/script.js'
-	},
-	module: {
+module.exports = {
+  mode: 'development',
+  entry: './src/index.jsx',
+  output: {
+    path: path.resolve(__dirname),
+    filename: 'bundle.js',
+  },
+  resolve: { // Segun yo esto ni sirve
+    extensions: [
+      '.js',
+      '.jsx',
+    ],
+  },
+  module: {
     rules: [
       {
-          test: /\.css$/,
-          use: [{ loader: 'style-loader' }, { loader: 'css-loader' }]
+        test: /\.(js|jsx)$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+        },
       },
-			{
-      test: /\.scss$/,
-      use: [
-          "style-loader", // creates style nodes from JS strings
-          "css-loader", // translates CSS into CommonJS
-          "sass-loader" // compiles Sass to CSS, using Node Sass by default
-      ]
-    }]
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader',
+        ],
+      },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          'file-loader?name=dist/images/[name].[ext]',
+        ],
+      },
+      {
+        test: /\.(pdf)$/i,
+        use: [
+          'file-loader?name=dist/docs/[name].[ext]',
+        ],
+      },
+    ],
   },
-	optimization: {
-		minimizer: [
-			new UglifyJsPlugin()
-		]
-	},
-	performance: {
-		hints: "warning",
-		maxEntrypointSize: 512000,
-		maxAssetSize: 512000
-  },
-	plugins: [
-		new webpack.ProvidePlugin({
-        $: "jquery",
-        jQuery: "jquery",
-        "window.jQuery": "jquery"
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'public/index.html',
     }),
-		new CopyWebpackPlugin([
-	    { from: path.resolve(__dirname, 'src/docs'), to: path.resolve(__dirname, 'dist/docs') },
-			{ from: path.resolve(__dirname, 'src/imgs'), to: path.resolve(__dirname, 'dist/imgs') }
-  	])
-	]
+  ],
 };
-
-module.exports = config;

@@ -1,4 +1,5 @@
 import React from 'react'
+import miImagen from '../../public/images/perfil.jpg'
 
 
 const QuienSoy = () => (
@@ -8,8 +9,8 @@ const QuienSoy = () => (
         ¿Quién soy?
       </h2>
       <p>
-        <img alt="Me" src="../../public/images/perfil.jpg" />
-        ¡Que ondas! Mi nombre es
+        <img alt="Me" src={miImagen} />
+        ¡Que ondas! Mi nombre es&nbsp;
         <strong>Armando Gómez</strong>
         , soy de Guadalajara Jalisco México, aunque nacido en Maracaibo Venezuela
         <em>(si, tengo ambas nacionalidades)</em>
