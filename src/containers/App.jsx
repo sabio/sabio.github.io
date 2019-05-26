@@ -17,7 +17,7 @@ const App = () => (
       <Route render={({ location, }) => (
         <div>
           <Header />
-          <div style={{ marginTop: '35px', }}>
+          <div id="wrapper">
             <TransitionGroup>
               <CSSTransition
                 key={location.pathname}
