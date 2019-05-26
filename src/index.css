@@ -33,14 +33,14 @@ body{
 }
 .fade-enter-active {
   left: 0%;
-  transition: all 1000ms;
+  transition: all 300ms;
 }
 .fade-exit {
   right: 0%;
 }
 .fade-exit-active {
   right: 100%;
-  transition: all 1000ms;
+  transition: all 300ms;
 }
 
 
@@ -367,6 +367,10 @@ body{
     font-size: 20px;
   }
 
+  .componentContainer-home{
+    background-image: url('../public/images/homeBackground-mobile.jpg');
+  }
+
   .componentContainer-quiensoy{
     font-size: 18px;
     overflow: auto;
@@ -380,5 +384,9 @@ body{
     width: 95%;
   }
 
+  .componentContainer-redessociales {
+    background-image: url('../public/images/redessocialesBackground-mobile.jpg');
+  }
+    
 
 }
