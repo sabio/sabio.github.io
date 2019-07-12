@@ -66,9 +66,9 @@ const EstudiosYExperiencia = ({ jsonExperiencia, jsonEstudios, }) => {
         <p>
           A continuación se muestra todo lo relacionado a mis estudios y experiencia.
           Si lo que buscas en un CV tradicional pues dale clic&nbsp;
-          <a href={cvEspanol} target="_blank">aqui</a>
+          <a href={cvEspanol} target="_blank" rel="noopener noreferrer">aqui</a>
           , y si lo quieres en inglés pues aquí está esta otra&nbsp;
-          <a href={cvIngles} target="_blank">liga</a>
+          <a href={cvIngles} target="_blank" rel="noopener noreferrer">liga</a>
           .
         </p>
         <>

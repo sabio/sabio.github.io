@@ -21,6 +21,10 @@ module.exports = {
     "react"
   ],
   "rules": {
+    "array-bracket-spacing": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/label-has-for": "off",
+    "no-nested-ternary": "off",
     // Require or disallow trailing commas.
     "comma-dangle": ["error", {
       arrays: 'always',
