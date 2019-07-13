@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rendering Home component 1`] = `
+<MemoryRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "pdqkby",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "pdqkby",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Home>
+      <div
+        className="componentContainer componentContainer-home"
+      >
+        <div
+          className="typewriter"
+        >
+          <h1>
+            ¡Bienvenid@s a mi website!
+          </h1>
+          <h2>
+            ¡Pásele con confianza!
+          </h2>
+        </div>
+        <Link
+          to="/quiensoy"
+        >
+          <a
+            href="/quiensoy"
+            onClick={[Function]}
+          >
+            <img
+              alt="arrow"
+              src={Object {}}
+            />
+          </a>
+        </Link>
+      </div>
+    </Home>
+  </Router>
+</MemoryRouter>
+`;
