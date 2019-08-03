@@ -5,10 +5,12 @@ import Main from '../components/Main'
 import Home from '../components/Home'
 import Header from '../components/Header'
 import QuienSoy from '../components/QuienSoy'
-import EstudiosYExperiencia from '../components/EstudiosYExperiencia'
+import EducacionYExperiencia from '../components/EducacionYExperiencia'
 import RedesSociales from '../components/RedesSociales'
 import jsonExperiencia from '../../public/docs/experiencia'
-import jsonEstudios from '../../public/docs/estudios'
+import jsonEducacion from '../../public/docs/educacion'
+import jsonCertificaciones from '../../public/docs/certificaciones'
+import jsonOtrasActividades from '../../public/docs/otrasActividades'
 
 
 const App = () => (
@@ -31,9 +33,11 @@ const App = () => (
                     exact
                     path="/estYExp"
                     render={() => (
-                      <EstudiosYExperiencia
+                      <EducacionYExperiencia
                         jsonExperiencia={jsonExperiencia}
-                        jsonEstudios={jsonEstudios}
+                        jsonEducacion={jsonEducacion}
+                        jsonCertificaciones={jsonCertificaciones}
+                        jsonOtrasActividades={jsonOtrasActividades}
                       />
                     )}
                   />

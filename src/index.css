@@ -221,7 +221,7 @@ body{
 
 
 
-.componentContainer-estudios-y-experiencia{
+.componentContainer-educacion-y-experiencia{
   align-items: baseline;
   background-color: #0c0c0c;
   display: flex;
@@ -230,35 +230,40 @@ body{
   height: auto;
 }
 
-.componentContainer-estudios-y-experiencia section {
+.componentContainer-educacion-y-experiencia section {
   text-align: justify;
   margin-top: 30px;
   width: 80%;
 }
 
-.componentContainer-estudios-y-experiencia section a {
+.componentContainer-educacion-y-experiencia section a {
   color: white;
   text-decoration: none;
 }
 
-.componentContainer-estudios-y-experiencia section h2{
+.componentContainer-educacion-y-experiencia section h2{
   text-align: center;
 }
-.componentContainer-estudios-y-experiencia section .position{
+.componentContainer-educacion-y-experiencia section .position,
+.componentContainer-educacion-y-experiencia section .certification{
   font-size: .8em;
   margin-bottom: 50px;
 }
 
-.componentContainer-estudios-y-experiencia section > h3{
+.componentContainer-educacion-y-experiencia section > h3{
   color:white;
   font-size: 1.8em;
 }
 
-.componentContainer-estudios-y-experiencia section .position h3{
+.componentContainer-educacion-y-experiencia section .position h3,
+.componentContainer-educacion-y-experiencia section .certification h3
+{
   margin: 0;
 }
 
-.componentContainer-estudios-y-experiencia section .position .fromTo{
+.componentContainer-educacion-y-experiencia section .position .fromTo,
+.componentContainer-educacion-y-experiencia section .certification .fromTo
+{
   margin: 0;
 }
 
