@@ -1,5 +1,22 @@
 const jsonExperiencia = [
   {
+    position: 'Senior Fullstack Developer',
+    company: 'IBM de México',
+    from: 'Enero 2019',
+    to: 'Presente',
+    tasks: [
+      {
+        description: 'Desarrollo y soporte de sistemas de uso interno en IBM para el manejo de ventas y marketing.',
+        details: [
+          'Desarrollo de servicios REST en Javascript, Node.js, Express, Swagger, entre otros.',
+          'Desarrollo de frontend con React, Redux, React Router, Babel, Webpack, IBM Carbon Design System, entre otros.',
+          'Uso de herramientas/tecnologías tales como Kubernetes, Docker, Git, Github, DB2, Cloudant, IBM Cloud, entre otros.',
+          'Uso de metodologías ágiles.',
+        ],
+      },
+    ],
+  },
+  {
     position: 'Java Developer',
     company: 'Universidad de Guadalajara',
     from: 'Noviembre 2015',

@@ -4,20 +4,16 @@ import cvIngles from '../../public/docs/CVEng.pdf'
 import cvEspanol from '../../public/docs/CVEsp.pdf'
 
 
-const EstudiosYExperiencia = ({ jsonExperiencia, jsonEstudios, }) => {
+const EducacionYExperiencia = ({ jsonExperiencia, jsonEducacion, jsonCertificaciones, jsonOtrasActividades }) => {
   const experiencia = jsonExperiencia.map(item => (
     <div className="position">
       <h3>
-        {item.position}
-        -
-        {item.company}
+        {item.position} - {item.company}
       </h3>
       <p className="fromTo">
-        Desde:
-        {item.from}
+        Desde: {item.from}
         <br />
-        Hasta:
-        {item.to}
+        Hasta: {item.to}
       </p>
       <>
         {item.tasks.map(task => (
@@ -40,31 +36,50 @@ const EstudiosYExperiencia = ({ jsonExperiencia, jsonEstudios, }) => {
     </div>
   ))
 
-  const estudios = jsonEstudios.map(item => (
+  const educacion = jsonEducacion.map(item => (
     <div className="position">
       <h3>
-        {item.course}
-        -
-        {item.school}
+        {item.course} - {item.school}
       </h3>
       <p className="fromTo">
-        Desde:
-        {item.from}
+        Desde: {item.from}
         <br />
-        Hasta:
-        {item.to}
+        Hasta: {item.to}
       </p>
     </div>
   ))
+  
+  const certificaciones = jsonCertificaciones.map(item => (
+    <div className="certification">
+      <h3>
+        {item.code} - {item.name}
+      </h3>
+      <p className="fromTo">
+        Fecha: {item.date}
+      </p>
+    </div>
+  ));
+
+  const otrasActividades = jsonOtrasActividades.map(item => (
+    <div className="otrasActividades">
+      <p>
+        {item.description}
+        <br />
+        <a href={item.url} target="_blank">
+          {item.url}
+        </a>
+      </p>
+    </div>
+  ));
 
   return (
-    <div className="componentContainer componentContainer-estudios-y-experiencia">
+    <div className="componentContainer componentContainer-educacion-y-experiencia">
       <section>
         <h2>
-          Estudios y experiencia
+          Educacion y experiencia
         </h2>
         <p>
-          A continuación se muestra todo lo relacionado a mis estudios y experiencia.
+          A continuación se muestra todo lo relacionado a mi educación y experiencia.
           Si lo que buscas en un CV tradicional pues dale clic&nbsp;
           <a href={cvEspanol} target="_blank" rel="noopener noreferrer">aqui</a>
           , y si lo quieres en inglés pues aquí está esta otra&nbsp;
@@ -77,17 +92,27 @@ const EstudiosYExperiencia = ({ jsonExperiencia, jsonEstudios, }) => {
         </>
         <br />
         <>
-          <h3>Estudios</h3>
-          {estudios}
+          <h3>Educación</h3>
+          {educacion}
+        </>
+        <>
+          <h3>Certificaciones</h3>
+          {certificaciones}
+        </>
+        <>
+          <h3>Otras actividades</h3>
+          {otrasActividades}
         </>
       </section>
     </div>
   )
 }
 
-EstudiosYExperiencia.propTypes = {
+EducacionYExperiencia.propTypes = {
   jsonExperiencia: PropTypes.node.isRequired,
   jsonEstudios: PropTypes.node.isRequired,
+  jsonCertificaciones: PropTypes.node.isRequired,
+  jsonOtrasActividades: PropTypes.node.isRequired,
 };
 
-export default EstudiosYExperiencia
+export default EducacionYExperiencia
