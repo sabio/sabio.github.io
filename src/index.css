@@ -49,6 +49,26 @@ body{
 }
 
 
+.divFlechas{
+  text-align: center;
+}
+
+
+.flecha{
+  cursor: pointer;
+  margin: 10px;
+  transition: all .1s linear; 
+  width: 20vh;
+}
+
+.flecha:hover{
+  transform: scale(1.1);
+}
+
+.flecha:active{
+  transform: scale(.9);
+}
+
 
 
 
@@ -125,22 +145,6 @@ body{
   align-items: center;
   flex-direction: column;
 }
-
-.componentContainer-home img{
-  cursor: pointer;
-  margin-top: 50px;
-  transition: all .1s linear; 
-  width: 20vh;
-}
-
-.componentContainer-home img:hover{
-  transform: scale(1.1);
-}
-
-.componentContainer-home img:active{
-  transform: scale(.9);
-}
-
 
 .typewriter {
   display: flex;
@@ -299,6 +303,7 @@ body{
 .componentContainer-redessociales a{
   color: inherit;
   display: inline-block;
+  font-size: 35px;
   text-decoration: none;
   transition: all .1s linear; 
 }
@@ -392,6 +397,9 @@ body{
   .componentContainer-redessociales {
     background-image: url('../public/images/redessocialesBackground-mobile.jpg');
   }
-    
+   
+  .componentContainer-redessociales a{
+    font-size: 30px;
+  }
 
 }

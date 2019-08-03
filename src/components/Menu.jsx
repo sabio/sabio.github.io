@@ -25,7 +25,7 @@ const Menu = () => {
       >
         <li><Link onClick={() => setMenuActive(false)} to="/">Home</Link></li>
         <li><Link onClick={() => setMenuActive(false)} to="/quiensoy">¿Quien soy?</Link></li>
-        <li><Link onClick={() => setMenuActive(false)} to="/estYExp">Estudios y Experiencia</Link></li>
+        <li><Link onClick={() => setMenuActive(false)} to="/estYExp">Educación y Experiencia</Link></li>
         <li><Link onClick={() => setMenuActive(false)} to="/redesSociales">Redes sociales</Link></li>
       </ul>
     </nav>
