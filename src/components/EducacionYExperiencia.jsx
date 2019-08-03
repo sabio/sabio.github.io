@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import cvIngles from '../../public/docs/CVEng.pdf'
 import cvEspanol from '../../public/docs/CVEsp.pdf'
-
+import Flecha from './Flecha'
 
 const EducacionYExperiencia = ({ jsonExperiencia, jsonEducacion, jsonCertificaciones, jsonOtrasActividades }) => {
   const experiencia = jsonExperiencia.map(item => (
@@ -103,6 +103,10 @@ const EducacionYExperiencia = ({ jsonExperiencia, jsonEducacion, jsonCertificaci
           <h3>Otras actividades</h3>
           {otrasActividades}
         </>
+        <div class="divFlechas">    
+          <Flecha direccion='izq' ruta='/quiensoy' />
+          <Flecha direccion='der' ruta='/redesSociales' />
+        </div>
       </section>
     </div>
   )

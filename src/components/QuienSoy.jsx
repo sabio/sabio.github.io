@@ -1,6 +1,6 @@
 import React from 'react'
 import miImagen from '../../public/images/perfil.jpg'
-
+import Flecha from './Flecha'
 
 const QuienSoy = () => (
   <div className="componentContainer componentContainer-quiensoy">
@@ -55,6 +55,10 @@ const QuienSoy = () => (
         &quot;diferente&quot; porque aunque soy dev y godinez no me gusta el café y mucho
         menos la cerveza, y porque tampoco me dejo la barba larga ni estoy panzón.
       </p>
+      <div class="divFlechas">    
+        <Flecha direccion='izq' ruta='/' />
+        <Flecha direccion='der' ruta='/estYExp' />
+      </div>
     </section>
   </div>
 )
