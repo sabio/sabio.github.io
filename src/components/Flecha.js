@@ -8,7 +8,7 @@ const Flecha = ({ direccion, ruta }) => {
 
   return (
     <Link to={ruta}>
-      <img class="flecha" alt="arrow" src={flechaImg} />
+      <img className="flecha" alt="arrow" src={flechaImg} />
     </Link>
   )
 }

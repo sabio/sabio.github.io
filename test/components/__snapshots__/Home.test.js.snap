@@ -12,7 +12,7 @@ exports[`Rendering Home component 1`] = `
         "entries": Array [
           Object {
             "hash": "",
-            "key": "pdqkby",
+            "key": "met0xu",
             "pathname": "/",
             "search": "",
             "state": undefined,
@@ -26,7 +26,7 @@ exports[`Rendering Home component 1`] = `
         "listen": [Function],
         "location": Object {
           "hash": "",
-          "key": "pdqkby",
+          "key": "met0xu",
           "pathname": "/",
           "search": "",
           "state": undefined,
@@ -50,19 +50,31 @@ exports[`Rendering Home component 1`] = `
             ¡Pásele con confianza!
           </h2>
         </div>
-        <Link
-          to="/quiensoy"
+        <br />
+        <br />
+        <div
+          className="divFlechas"
         >
-          <a
-            href="/quiensoy"
-            onClick={[Function]}
+          <Flecha
+            direccion="der"
+            ruta="/quiensoy"
           >
-            <img
-              alt="arrow"
-              src={Object {}}
-            />
-          </a>
-        </Link>
+            <Link
+              to="/quiensoy"
+            >
+              <a
+                href="/quiensoy"
+                onClick={[Function]}
+              >
+                <img
+                  alt="arrow"
+                  className="flecha"
+                  src={Object {}}
+                />
+              </a>
+            </Link>
+          </Flecha>
+        </div>
       </div>
     </Home>
   </Router>

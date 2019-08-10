@@ -9,7 +9,7 @@ const Home = () => (
     </div>
     <br />
     <br />
-    <div class="divFlechas">    
+    <div className="divFlechas">    
         <Flecha direccion='der' ruta='/quiensoy' />
       </div>
   </div>
