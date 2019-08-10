@@ -76,7 +76,7 @@ const EducacionYExperiencia = ({ jsonExperiencia, jsonEducacion, jsonCertificaci
     <div className="componentContainer componentContainer-educacion-y-experiencia">
       <section>
         <h2>
-          Educacion y experiencia
+          Educación y experiencia
         </h2>
         <p>
           A continuación se muestra todo lo relacionado a mi educación y experiencia.
