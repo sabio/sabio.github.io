@@ -190,7 +190,7 @@ body{
   background-image: url('../public/images/quiensoyBackground.jpg');
   background-size: 100% 100%;
   display: flex;
-  font-family: 'Lobster', cursive;
+  font-family: 'Roboto', sans-serif;
   justify-content: center;
 }
 
@@ -229,7 +229,7 @@ body{
   align-items: baseline;
   background-color: #0c0c0c;
   display: flex;
-  font-family: 'Lobster', cursive;
+  font-family: 'Roboto', sans-serif;
   justify-content: center;
   height: auto;
 }
