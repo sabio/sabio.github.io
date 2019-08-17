@@ -58,7 +58,7 @@ body{
   cursor: pointer;
   margin: 10px;
   transition: all .1s linear; 
-  width: 20vh;
+  width: 15vh;
 }
 
 .flecha:hover{
@@ -325,6 +325,12 @@ body{
 
 
 @media screen and (max-width: 700px) {
+  
+  @keyframes typing2 {
+    from { width: 0 }
+    to { width: 80% }
+  }
+
   #wrapper{
     margin-top: 70px;
   }
@@ -366,11 +372,6 @@ body{
   }
 
 
-
-
-  .componentContainer{
-    height: 100%;
-  }
 
   .componentContainer-home h1,
   .componentContainer-home h2{
