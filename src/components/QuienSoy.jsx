@@ -55,7 +55,7 @@ const QuienSoy = () => (
         &quot;diferente&quot; porque aunque soy dev y godinez no me gusta el café y mucho
         menos la cerveza, y porque tampoco me dejo la barba larga ni estoy panzón.
       </p>
-      <div class="divFlechas">    
+      <div className="divFlechas">    
         <Flecha direccion='izq' ruta='/' />
         <Flecha direccion='der' ruta='/estYExp' />
       </div>

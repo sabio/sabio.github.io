@@ -125,6 +125,27 @@ body{
 }
 
 
+.changeLanguageDiv{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+
+.changeLanguageDiv img{
+  cursor: pointer;
+  transition: transform .2s;
+  width: 50px;
+}
+
+.changeLanguageDiv img:hover{
+  transform: scale(1.2); 
+}
+
+
+
+
 
 
 .componentContainer{
