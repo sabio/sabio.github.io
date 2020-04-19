@@ -125,6 +125,27 @@ body{
 }
 
 
+.changeLanguageDiv{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+
+.changeLanguageDiv img{
+  cursor: pointer;
+  transition: transform .2s;
+  width: 50px;
+}
+
+.changeLanguageDiv img:hover{
+  transform: scale(1.2); 
+}
+
+
+
+
 
 
 .componentContainer{
@@ -191,6 +212,7 @@ body{
   background-size: 100% 100%;
   display: flex;
   font-family: 'Roboto', sans-serif;
+  font-size: 2em;
   justify-content: center;
 }
 
@@ -210,10 +232,6 @@ body{
   float: left;
   margin-right: 20px;
   width: 180px;
-}
-
-.componentContainer-quiensoy section p strong{
-  font-weight: bolder;
 }
 
 .componentContainer-quiensoy section p a{
@@ -383,7 +401,7 @@ body{
   }
 
   .componentContainer-quiensoy{
-    font-size: 18px;
+    font-size: 1.8em;
     overflow: auto;
   }
 
