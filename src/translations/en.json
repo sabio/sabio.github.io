@@ -4,6 +4,21 @@
   "app.educationAndExperience": "Education and Experience",
   "app.socialNetworks": "Social Networks",
 
+  "app.here": "here",
+
   "app.welcomeMessage": "Welcome to my website!",
-  "app.welcomeMessage2": "Please come inside!"
+  "app.welcomeMessage2": "Please come inside!",
+  
+  "app.whoamipart1": "Hi folks! My name is Armando Gómez, I am from Guadalajara Jalisco Mexico, I was born in Maracaibo Venezuela (yes, I have both nationalities, mexican and venezuelan). I am a software engineer with a postgraduate degree in Information Technology. I sometimes do stuff with Python (which its backward compatibility and performance suck, they say), Java (which it's about to die because it's old, slow and Oracle acquired it, they say), PL / SQL (ugly as hell) and Javascript (which is ugly because in reality it is not OOP and it's hard to tell the difference between null, NaN and undefined, besides ",
+  "app.whoamipart2": "Richard Stallman is afraid of it",
+  "app.whoamipart3": "). I have also worked with MySQL and Oracle databases (since they are not NoSQL they are already obsolete and nobody should use them anymore).",
+  "app.whoamipart4": "Let's get serious. I am a Java EE Developer with 10 years of experience who likes software development, but that doesn't mean I think Java is the best of the best. I consider other programming languages such as Python, Javascript and Ruby very interesting so every dev should give them a try. I graduated from the University of Guadalajara at both Bachelor and Master levels. I love riding my bike and going to the gym.",
+
+  "app.eduandexp1": "Below is everything related to my education and experience. If you are looking for a traditional CV, click ",
+  "app.eduandexp2": " for spanish version, or if you prefer english version clic ",
+  
+  "app.experience": "Experience",
+  "app.education": "Education",
+  "app.certifications": "Certifications",
+  "app.otheractivities": "Other activities"
 }

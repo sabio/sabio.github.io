@@ -9,7 +9,7 @@ import App from './containers/App'
 
 
 let initialState = {
-  language: "es"
+  language: "en"
 };
 
 ReactDOM.render(

@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { FormattedMessage } from 'react-intl'; 
 import cvIngles from '../../public/docs/CVEng.pdf'
 import cvEspanol from '../../public/docs/CVEsp.pdf'
 import Flecha from './Flecha'
@@ -76,31 +77,33 @@ const EducacionYExperiencia = ({ jsonExperiencia, jsonEducacion, jsonCertificaci
     <div className="componentContainer componentContainer-educacion-y-experiencia">
       <section>
         <h2>
-          Educación y experiencia
+          <FormattedMessage id="app.educationAndExperience" />
         </h2>
         <p>
-          A continuación se muestra todo lo relacionado a mi educación y experiencia.
-          Si lo que buscas en un CV tradicional pues dale clic&nbsp;
-          <a href={cvEspanol} target="_blank" rel="noopener noreferrer">aqui</a>
-          , y si lo quieres en inglés pues aquí está esta otra&nbsp;
-          <a href={cvIngles} target="_blank" rel="noopener noreferrer">liga</a>
-          .
+          <FormattedMessage id="app.eduandexp1" />
+          <a href={cvEspanol} target="_blank" rel="noopener noreferrer">
+            <FormattedMessage id="app.here" />
+          </a>
+          <FormattedMessage id="app.eduandexp2" />
+          <a href={cvIngles} target="_blank" rel="noopener noreferrer">
+            <FormattedMessage id="app.here" />
+          </a>.
         </p>
         <>
-          <h3>Experiencia</h3>
+          <h3><FormattedMessage id="app.experience" /></h3>
           {experiencia}
         </>
         <br />
         <>
-          <h3>Educación</h3>
+          <h3><FormattedMessage id="app.education" /></h3>
           {educacion}
         </>
         <>
-          <h3>Certificaciones</h3>
+          <h3><FormattedMessage id="app.certifications" /></h3>
           {certificaciones}
         </>
         <>
-          <h3>Otras actividades</h3>
+          <h3><FormattedMessage id="app.otheractivities" /></h3>
           {otrasActividades}
         </>
         <div class="divFlechas">    

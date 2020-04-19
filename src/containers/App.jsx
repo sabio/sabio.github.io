@@ -8,11 +8,14 @@ import Header from '../components/Header'
 import QuienSoy from '../components/QuienSoy'
 import EducacionYExperiencia from '../components/EducacionYExperiencia'
 import RedesSociales from '../components/RedesSociales'
-import jsonExperiencia from '../../public/docs/experiencia'
+import experiencia_es from '../../public/docs/experiencia_es'
+import experiencia_en from '../../public/docs/experiencia_en'
 import educacion_es from '../../public/docs/educacion_es'
 import educacion_en from '../../public/docs/educacion_en'
-import jsonCertificaciones from '../../public/docs/certificaciones'
-import jsonOtrasActividades from '../../public/docs/otrasActividades'
+import certificaciones_es from '../../public/docs/certificaciones_es'
+import certificaciones_en from '../../public/docs/certificaciones_en'
+import otrasActividades_es from '../../public/docs/otrasActividades_es'
+import otrasActividades_en from '../../public/docs/otrasActividades_en'
 
 import { IntlProvider, addLocaleData } from "react-intl";
 import messages_en from "../translations/en.json";
@@ -27,6 +30,12 @@ const messages = {
 const jsons = {}
 jsons['educacion_es'] = educacion_es
 jsons['educacion_en'] = educacion_en
+jsons['experiencia_es'] = experiencia_es
+jsons['experiencia_en'] = experiencia_en
+jsons['certificaciones_es'] = certificaciones_es
+jsons['certificaciones_en'] = certificaciones_en
+jsons['otrasActividades_es'] = otrasActividades_es
+jsons['otrasActividades_en'] = otrasActividades_en
 
 
 const App = ({language}) => {
@@ -52,10 +61,10 @@ const App = ({language}) => {
                         path="/estYExp"
                         render={() => (
                           <EducacionYExperiencia
-                            jsonExperiencia={jsonExperiencia}
+                            jsonExperiencia={getJson("experiencia", language)}
                             jsonEducacion={getJson("educacion", language)}
-                            jsonCertificaciones={jsonCertificaciones}
-                            jsonOtrasActividades={jsonOtrasActividades}
+                            jsonCertificaciones={getJson("certificaciones", language)}
+                            jsonOtrasActividades={getJson("otrasActividades", language)}
                           />
                         )}
                       />

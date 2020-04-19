@@ -4,6 +4,21 @@
   "app.educationAndExperience": "Educación y experiencia",
   "app.socialNetworks": "Redes sociales",
 
+  "app.here": "aquí",
+
   "app.welcomeMessage": "¡Bienvenid@s a mi website!",
-  "app.welcomeMessage2": "¡Pásele con confianza!"
+  "app.welcomeMessage2": "¡Pásele con confianza!",
+  
+  "app.whoamipart1": "¡Que ondas! Mi nombre es Armando Gómez, soy de Guadalajara Jalisco México, aunque nacido en Maracaibo Venezuela(si, tengo ambas nacionalidades). Soy un ingeniero de software con un posgrado en Tecnologías de Información(esta cool el papelito)que le pica a algo llamado Python(que disque esta feo porque su retrocompatibilidad y performance apestan), a Java(que desde hace varios años dicen ya se va a morir que porque ya esta pinche viejo, porque lo adquirió Oracle, y además es lento segun eso)y a PL/SQL(el mismo diablo hecho lenguaje), y de vez en cuando a Javascript(que disque es peligroso tener activada esa madre en el navegador, que esta feo porque en realidad no es OO y esta cabrón saber la diferencia entre null, NaN y undefined, y además ",
+  "app.whoamipart2": "Richard Stallman le tiene miedo",
+  "app.whoamipart3": "). He trabajado tambien con las bases de datos MySQL y Oracle (que como no son NoSQL ya son obsoletas y ya nadie las debería usar).",
+  "app.whoamipart4": "Bueno ya en serio, soy un Java EE Developer con tan solo 10 añejos de experiencia que le gusta el desarrollo de software, aunque no por el hecho de trabajar con Java pienso que Java es lo mejor del mundo. Python, Javascript y Ruby también los considero lenguajes interesantes que todo dev debería al menos tener una interacción alguna vez. Egresado y titulado de la Universidad de Guadalajara tanto en nivel Licenciatura como en Maestría. Me gusta andar en bici y el gym.",
+  
+  "app.eduandexp1": "A continuación se muestra todo lo relacionado a mi educación y experiencia. Si lo que buscas en un CV tradicional pues dale clic ",
+  "app.eduandexp2": " para la versión en español, o si prefieres inglés dale clic ",
+  
+  "app.experience": "Experiencia",
+  "app.education": "Educación",
+  "app.certifications": "Certificaciones",
+  "app.otheractivities": "Otras actividades"
 }
