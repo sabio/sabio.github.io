@@ -245,7 +245,7 @@ body{
 
 .componentContainer-educacion-y-experiencia{
   align-items: baseline;
-  background-color: #0c0c0c;
+  background-image: url('../public/images/darkBackground.png');
   display: flex;
   font-family: 'Roboto', sans-serif;
   justify-content: center;
