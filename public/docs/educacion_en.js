@@ -1,6 +1,6 @@
 const jsonEducacion = [
   {
-    course: 'Master of Information Technology.  University of Guadalajara',
+    course: 'Master in Information Technology.  University of Guadalajara',
     school: 'University of Guadalajara',
     from: '2011',
     to: '2013',
@@ -18,7 +18,7 @@ const jsonEducacion = [
     to: 'September 2008',
   },
   {
-    course: 'Bachelor of Informatics',
+    course: 'Bachelor\'s Degree in Informatics',
     school: 'University of Guadalajara',
     from: '2004',
     to: '2008',
