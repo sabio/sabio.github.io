@@ -12,9 +12,9 @@ const EducacionYExperiencia = ({ jsonExperiencia, jsonEducacion, jsonCertificaci
         {item.position} - {item.company}
       </h3>
       <p className="fromTo">
-        Desde: {item.from}
+      <FormattedMessage id="app.from" />: {item.from}
         <br />
-        Hasta: {item.to}
+        <FormattedMessage id="app.to" />: {item.to}
       </p>
       <>
         {item.tasks.map(task => (
@@ -43,9 +43,9 @@ const EducacionYExperiencia = ({ jsonExperiencia, jsonEducacion, jsonCertificaci
         {item.course} - {item.school}
       </h3>
       <p className="fromTo">
-        Desde: {item.from}
+      <FormattedMessage id="app.from" />: {item.from}
         <br />
-        Hasta: {item.to}
+        <FormattedMessage id="app.to" />: {item.to}
       </p>
     </div>
   ))
@@ -56,7 +56,7 @@ const EducacionYExperiencia = ({ jsonExperiencia, jsonEducacion, jsonCertificaci
         {item.code} - {item.name}
       </h3>
       <p className="fromTo">
-        Fecha: {item.date}
+      <FormattedMessage id="app.date" />: {item.date}
       </p>
     </div>
   ));

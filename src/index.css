@@ -294,13 +294,6 @@ body{
 
 
 
-
-
-
-
-
-
-
 .componentContainer-redessociales {
   align-items: center;
   background-image: url('../public/images/redessocialesBackground.jpg');
@@ -310,6 +303,7 @@ body{
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 20px;
   justify-content: center;
+  margin-top: -35px;
 }
 
 .componentContainer-redessociales > div {
@@ -319,7 +313,7 @@ body{
 }
 
 .componentContainer-redessociales a{
-  color: inherit;
+  color: rgb(253, 226, 226);
   display: inline-block;
   font-size: 35px;
   text-decoration: none;
@@ -327,6 +321,7 @@ body{
 }
 
 .componentContainer-redessociales a:hover{
+
   color: white;
   transform: scale(1.5);
 }

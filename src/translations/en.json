@@ -5,6 +5,9 @@
   "app.socialNetworks": "Social Networks",
 
   "app.here": "here",
+  "app.from": "From",
+  "app.to": "To",
+  "app.date": "Date",
 
   "app.welcomeMessage": "Welcome to my website!",
   "app.welcomeMessage2": "Please come inside!",
