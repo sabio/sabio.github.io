@@ -73,13 +73,45 @@ body{
 
 
 
-/* Menu stuff */
-#mainMenu{
-  line-height: 70px;
+/* Main bar and menu stuff */
+
+#mainBar {
+  display: flex;
   position: fixed;
   top:0;
   width: 100%;
   z-index: 1;
+}
+
+.changeLanguageDiv{
+  align-items: center;
+  background-color: #2586d7;
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+}
+
+
+.changeLanguageDiv img{
+  cursor: pointer;
+  transition: transform .2s;
+  width: 70px;
+
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+.changeLanguageDiv img:hover{
+  transform: scale(1.2); 
+}
+
+
+
+#mainMenu{
+  line-height: 70px;
+  width: 80%;
 }
 
 #mainMenu label {
@@ -124,24 +156,6 @@ body{
   width: 100%;
 }
 
-
-.changeLanguageDiv{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 100%;
-}
-
-
-.changeLanguageDiv img{
-  cursor: pointer;
-  transition: transform .2s;
-  width: 50px;
-}
-
-.changeLanguageDiv img:hover{
-  transform: scale(1.2); 
-}
 
 
 
@@ -348,15 +362,28 @@ body{
     margin-top: 70px;
   }
 
+
+  #mainBar {
+    flex-direction: row-reverse;
+  }
+
+  .changeLanguageDiv{
+    position: fixed;
+    top: 9px;
+    left: 0;
+    width: 60%;
+  }
   
-  #mainMenu div{
-    background-color: #2586d7;
-    color: white;
-    display: block;
-    text-align: right;
-    font-size: 2em;
-    padding-right: 10px;
-    line-height: 50px;
+  .changeLanguageDiv img{
+    width: 90px;
+  }
+  
+  .changeLanguageDiv img:hover{
+    transform: none;
+  }
+  
+  #mainMenu{
+    width: 100%;
   }
 
   #mainMenu label{

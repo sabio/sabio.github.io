@@ -1,11 +1,13 @@
 import React from 'react'
 import Menu from './Menu'
+import FlagLangs from './FlagLangs'
 
 
 const MainBar = () => (
-  <section>
+  <div id="mainBar">
     <Menu />
-  </section>
+    <FlagLangs />
+  </div>
 )
 
 
