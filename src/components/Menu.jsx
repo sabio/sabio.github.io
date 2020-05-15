@@ -1,7 +1,6 @@
 import React, { useState, } from 'react'
 import { Link, } from 'react-router-dom'
 import { FormattedMessage } from 'react-intl'; 
-import FlagLangs from './FlagLangs'
 
 
 const Menu = () => {
@@ -44,9 +43,6 @@ const Menu = () => {
           <Link onClick={() => setMenuActive(false)} to="/redesSociales">
             <FormattedMessage id="app.socialNetworks" />
           </Link>
-        </li>
-        <li>
-          <FlagLangs />
         </li>
       </ul>
     </nav>
