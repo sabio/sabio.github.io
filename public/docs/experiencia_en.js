@@ -8,9 +8,9 @@ const jsonExperiencia = [
       {
         description: 'Development and maintenance of sales and marketing systems.',
         details: [
-          'Development of REST services using Javascript. Node.js, Express, Swagger, among others.',
+          'Development of REST services using Java, Spring Boot, Javascript, Node.js, Express, Swagger, among others.',
           'Development of frontend apps using React, Redux, React Router, Babel, Webpack, IBM Carbon Design System, among others.',
-          'Use of tools/technologies such as Kubernetes, Docker, Git, Github, DB2, Cloudant, IBM Cloud, among others.',
+          'Use of tools/technologies such as Kubernetes, Docker, Git, Github, DB2, PostgreSQL, Cloudant, IBM Cloud, among others.',
           'Use of agile methodologies.',
         ],
       },
