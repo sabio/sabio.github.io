@@ -67,7 +67,7 @@ const EducacionYExperiencia = ({ jsonExperiencia, jsonEducacion, jsonCertificaci
         {item.description}
         <br />
         <a href={item.url} target="_blank">
-          {item.url}
+          Google play app page 
         </a>
       </p>
     </div>
