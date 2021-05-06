@@ -1,6 +1,6 @@
 const jsonExperiencia = [
   {
-    position: 'Senior Fullstack Developer',
+    position: 'Java Developer',
     company: 'IBM de México',
     from: 'January 2019',
     to: 'Present',
@@ -8,9 +8,9 @@ const jsonExperiencia = [
       {
         description: 'Development and maintenance of sales and marketing systems.',
         details: [
-          'Development of REST services using Java, Spring Boot, Javascript, Node.js, Express, Swagger, among others.',
-          'Development of frontend apps using React, Redux, React Router, Babel, Webpack, IBM Carbon Design System, among others.',
-          'Use of tools/technologies such as Kubernetes, Docker, Git, Github, DB2, PostgreSQL, Cloudant, IBM Cloud, among others.',
+          'Development of REST services mostly in Spring Boot, and sometimes in Node.js, Express, among others.',
+          'Use of tools/technologies such as Kubernetes, Docker, Git, Github, DB2, Cloudant, IBM Cloud, among others.',
+          'Sometimes I work on the development of frontend apps using React, Redux, React Router, Babel, Webpack, IBM Carbon Design System, among others.',
           'Use of agile methodologies.',
         ],
       },
