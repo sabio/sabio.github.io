@@ -23,5 +23,6 @@
   "app.experience": "Experience",
   "app.education": "Education",
   "app.certifications": "Certifications",
-  "app.otheractivities": "Other activities"
+  "app.otheractivities": "Other activities",
+  "app.visitWebsite": "Visit website"
 }

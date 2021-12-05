@@ -13,7 +13,7 @@ const QuienSoy = () => (
         <img alt="Me" src={miImagen} />
         <FormattedMessage id="app.whoamipart1" />
         <a target="_blank" rel="noopener noreferrer" href="https://www.gnu.org/philosophy/javascript-trap.en.html">
-        <FormattedMessage id="app.whoamipart2" />
+          <FormattedMessage id="app.whoamipart2" />
         </a>
         <FormattedMessage id="app.whoamipart3" />
       </p>
