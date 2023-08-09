@@ -1,4 +1,13 @@
-// node-sass --watch scss/index.scss --output scss/
+/*
+    node-sass --watch scss/index.scss --output scss/
+
+    paginas de ejemplo
+    https://gndx.io/
+
+    
+
+*/
+
 
 /*  VARIABLES */
 
@@ -98,7 +107,7 @@ header {
     background-image: url(../assets/images/homeBackground.jpg);
     background-size: 100% 100%;
     display: grid;
-    grid-template-columns: 50%;
+    grid-template-columns: 35%;
     align-items: center;
     justify-content: center;
 }
@@ -107,7 +116,29 @@ header {
 .presentation-card {
     background-color: $presentationCardBackgroundColor;
     color: rgb(44, 44, 44);
-    border-radius: 5px;
-    padding: 5px;
+    border-radius: 10px;
+    padding: 20px;
     transition: 2s opacity;
+
+    .presentation-card-header {
+        display: flex;
+
+        div p:nth-child(1) {
+            font-size: 1.5em;
+            color: black;
+            padding-bottom: 5px;
+        }
+
+        div p:nth-child(2) {
+            color: black;
+            padding-bottom: 5px;
+        }
+
+
+        div img {
+            border-radius: 10px;
+            width: 120px;
+        }
+
+    }
 }
