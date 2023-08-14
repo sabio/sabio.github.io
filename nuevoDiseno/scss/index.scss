@@ -3,6 +3,12 @@
 
     paginas de ejemplo
     https://gndx.io/
+    https://beacons.ai/jeznon
+    https://anahisalgado.com/
+    https://beacons.ai/mae_mazcort
+    https://claunicode.com/
+    https://fmontes.com/es/about
+    https://malvabombom.xyz/
 
     
 
@@ -12,7 +18,7 @@
 /*  VARIABLES */
 
 $menuBackgroundColor:#222E50;
-$presentationCardBackgroundColor: #fff4f3;
+$presentationCardBackgroundColor: #fff;
 $color: rgb(255, 255, 255);
 $fontSize: 16px;
 $colorsPalette: ("primary": #222E50, 
@@ -114,24 +120,50 @@ header {
 
 
 .presentation-card {
-    background-color: $presentationCardBackgroundColor;
+    background-color: darken($presentationCardBackgroundColor, 5%);
     color: rgb(44, 44, 44);
     border-radius: 10px;
-    padding: 20px;
     transition: 2s opacity;
 
     .presentation-card-header {
+        background-color: $presentationCardBackgroundColor;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 20px 20px 10px 20px;
         display: flex;
 
         div p:nth-child(1) {
             font-size: 1.5em;
+            font-weight: bold;
             color: black;
             padding-bottom: 5px;
         }
 
         div p:nth-child(2) {
+            font-size: 1em;
             color: black;
             padding-bottom: 5px;
+        }
+
+        div p:nth-child(3) {
+            font-size: 1em;
+            font-weight: bold;
+            color: black;
+            padding-bottom: 5px;
+        }
+
+        div p:nth-child(4) {
+            font-size: 0.9em;
+            color: black;
+            padding-bottom: 5px;
+        }
+
+        div p:nth-child(5) {
+            margin-top: 15px;
+
+            svg {
+                margin-right: 10px;
+            }
         }
 
 
@@ -139,6 +171,11 @@ header {
             border-radius: 10px;
             width: 120px;
         }
-
+        
     }
+
+    .presentation-card-description {
+        margin: 20px;
+    }
+
 }
