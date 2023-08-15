@@ -17,7 +17,8 @@
 
 /*  VARIABLES */
 
-$menuBackgroundColor:#222E50;
+$headerHeight: 6vh;
+$menuBackgroundColor: #222E50;
 $presentationCardBackgroundColor: #fff;
 $color: rgb(255, 255, 255);
 $fontSize: 16px;
@@ -44,7 +45,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#menuToggleIcon {
+    display: none;
+}
 
+#menuToggleCheckbox {
+    display: none;
+}
 
 
 .opacity-zero {
@@ -56,7 +63,7 @@ body {
 
 
 header {
-    height: 6vh;
+    height: $headerHeight;
     display: flex;
     background-color: $menuBackgroundColor;
     box-shadow: 0px 3px 14px 0px rgba(0,0,0,0.75);
@@ -66,10 +73,11 @@ header {
 
         & > ul {
             display: flex;
+            background-color: $menuBackgroundColor;
             & > li {
                 display: inline-block;
                 text-align: center;
-                padding: 20px 100px;
+                padding: 20px 80px;
                 flex-grow: 1;
                 cursor: pointer;
 
@@ -84,7 +92,7 @@ header {
         flex-grow: 2;
         display: flex;
         align-items: center;
-        
+        height: $headerHeight;
 
         span {
             flex-grow: 1;
@@ -177,5 +185,51 @@ header {
     .presentation-card-description {
         margin: 20px;
     }
+
+}
+
+
+@media (max-width: 1500px) {
+    header > nav > ul > li {
+        padding: 20px 40px;
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+
+    input[type=checkbox]:checked ~ ul {
+        display: flex;
+    }
+
+    #menuToggleIcon {
+        font-size: 2.3em;
+        display: block;
+        position: absolute;
+        right: 15px;
+        cursor: pointer;
+    }
+
+    header {
+        min-height: 55px;
+
+        & > nav > ul{
+            display: none;
+            flex-direction: column;
+            margin-top: $headerHeight;
+        }
+
+        & > div {
+            position: absolute;
+            min-height: 55px;
+            width: 500px;
+
+
+        }
+
+    }
+
+
 
 }
