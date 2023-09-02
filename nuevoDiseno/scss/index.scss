@@ -20,7 +20,7 @@
 $headerHeight: 6vh;
 $minHeaderHeight: 60px;
 $menuBackgroundColor: #222E50;
-$presentationCardBackgroundColor: #fff;
+$presentation-cardBackgroundColor: #fff;
 $color: rgb(255, 255, 255);
 $fontSize: 16px;
 $colorsPalette: ("primary": #222E50, 
@@ -28,6 +28,32 @@ $colorsPalette: ("primary": #222E50,
                 "third": #222E50,
                 "fourth": #222E50,
                 "fifth": #222E50);
+
+$breakpoints: (
+    small: 0px,
+    medium: 640px,
+    large: 1024px,
+    xlarge: 1440px,
+);
+
+
+/*  MIXINS  */
+
+@mixin rwd($bp) {
+    @if map-has-key($breakpoints, $bp) {
+        @media screen and (max-width: map-get($breakpoints, $bp)) {
+            @content
+        }
+    } @else {
+        @media screen and (max-width: $bp) {
+            @content
+        }
+    }
+    
+}
+
+
+
 
 // https://coolors.co/222e50-007991-439a86-bcd8c1-e9d985
 
@@ -130,78 +156,107 @@ header {
 
 
 .presentation-card {
-    background-color: darken($presentationCardBackgroundColor, 5%);
+    background-color: darken($presentation-cardBackgroundColor, 5%);
     color: rgb(44, 44, 44);
     border-radius: 10px;
     transition: 2s opacity;
 
-    .presentation-card-header {
-        background-color: $presentationCardBackgroundColor;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        padding: 20px 20px 10px 20px;
-        display: flex;
+}
 
-        div p:nth-child(1) {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: black;
-            padding-bottom: 5px;
-        }
+.presentation-card__header {
+    background-color: $presentation-cardBackgroundColor;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px 20px 10px 20px;
+    display: flex;
 
-        div p:nth-child(2) {
-            font-size: 1em;
-            color: black;
-            padding-bottom: 5px;
-        }
-
-        div p:nth-child(3) {
-            font-size: 1em;
-            font-weight: bold;
-            color: black;
-            padding-bottom: 5px;
-        }
-
-        div p:nth-child(4) {
-            font-size: 0.9em;
-            color: black;
-            padding-bottom: 5px;
-        }
-
-        div p:nth-child(5) {
-            margin-top: 15px;
-
-            svg {
-                margin-right: 10px;
-            }
-        }
-
-
-        div img {
-            border-radius: 10px;
-            width: 120px;
-        }
-        
+    div p:nth-child(1) {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: black;
+        padding-bottom: 5px;
     }
 
-    .presentation-card-description {
-        margin: 20px;
+    div p:nth-child(2) {
+        font-size: 1em;
+        color: black;
+        padding-bottom: 5px;
     }
 
+    div p:nth-child(3) {
+        font-size: 1em;
+        font-weight: bold;
+        color: black;
+        padding-bottom: 5px;
+    }
+
+    div p:nth-child(4) {
+        font-size: 0.9em;
+        color: black;
+        padding-bottom: 5px;
+    }
+
+    div p:nth-child(5) {
+        margin-top: 15px;
+
+        svg {
+            cursor: pointer;
+            margin-right: 10px;
+            fill: rgb(78, 75, 76);
+        }
+
+        .instagram-logo:hover {
+            fill: rgb(199, 37, 67);
+        }
+
+        .twitter-logo:hover {
+            fill: rgb(147, 197, 253);
+        }
+
+        .linkedin-logo:hover {
+            fill: rgb(59, 130, 246);
+        }
+
+        .github-logo:hover {
+            fill: rgb(150, 117, 201);
+        }
+
+        .youtube-logo:hover {
+            fill: rgb(255, 0, 0);;
+        }
+    }
+
+
+    div img {
+        border-radius: 10px;
+        width: 120px;
+    }
+    
+}
+
+.presentation-card__description {
+    margin: 20px;
 }
 
 
-@media (max-width: 1500px) {
+
+
+
+
+
+/*     MEDIA QUERIES     */
+
+@include rwd(xlarge){
     header > nav > ul > li {
         padding: 20px 40px;
     }
+
 }
 
 
 
-@media (max-width: 1000px) {
-
-    input[type=checkbox]:checked ~ ul {
+@include rwd(large){
+    #menuToggleCheckbox:checked ~ ul {
         display: flex;
     }
 
@@ -231,7 +286,5 @@ header {
         }
 
     }
-
-
-
 }
+
