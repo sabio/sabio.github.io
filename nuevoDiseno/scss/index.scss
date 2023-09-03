@@ -95,53 +95,50 @@ header {
     background-color: $menuBackgroundColor;
     box-shadow: 0px 3px 14px 0px rgba(0,0,0,0.75);
     min-height: $minHeaderHeight;
+}
 
-    & > nav {
-        flex-grow: 3;
+nav {
+    flex-grow: 3;
 
-        & > ul {
-            display: flex;
-            background-color: $menuBackgroundColor;
-            & > li {
-                display: inline-block;
-                text-align: center;
-                padding: 20px 80px;
-                flex-grow: 1;
-                cursor: pointer;
-
-            }
-            & > li:hover{
-                background-color: darken($menuBackgroundColor, 5%);
-            }
-        } 
-    }
-
-    & > div {
-        flex-grow: 2;
+    ul {
         display: flex;
-        align-items: center;
-        min-height: $minHeaderHeight;
-
-        span {
-            flex-grow: 1;
+        background-color: $menuBackgroundColor;
+        li {
+            display: inline-block;
             text-align: center;
-            justify-content: center;
-            align-items: stretch;
+            padding: 20px 80px;
+            flex-grow: 1;
+            cursor: pointer;
+        }
+        li:hover{
+            background-color: darken($menuBackgroundColor, 5%);
+        }
+    } 
+}
 
-            img {
-                cursor: pointer;
-                transition: .3s all;
-                width: 30%;
-    
-                &:hover {
-                    width: 40%;
-                }
+.header__flags {
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    min-height: $minHeaderHeight;
+
+    span {
+        flex-grow: 1;
+        text-align: center;
+        justify-content: center;
+        align-items: stretch;
+
+        img {
+            cursor: pointer;
+            transition: .3s all;
+            width: 30%;
+
+            &:hover {
+                width: 40%;
             }
         }
     }
 }
-
-
 
 
 #main-section {
@@ -160,7 +157,6 @@ header {
     color: rgb(44, 44, 44);
     border-radius: 10px;
     transition: 2s opacity;
-
 }
 
 .presentation-card__header {
@@ -281,10 +277,11 @@ header {
             position: absolute;
             min-height: 55px;
             width: 500px;
-
-
         }
+    }
 
+    #main-section {
+        grid-template-columns: 90%;
     }
 }
 
