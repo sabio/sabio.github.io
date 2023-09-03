@@ -18,7 +18,7 @@
 /*  VARIABLES */
 
 $headerHeight: 6vh;
-$minHeaderHeight: 60px;
+$minHeaderHeight: 58px;
 $menuBackgroundColor: #222E50;
 $presentation-cardBackgroundColor: #fff;
 $color: rgb(255, 255, 255);
@@ -30,10 +30,9 @@ $colorsPalette: ("primary": #222E50,
                 "fifth": #222E50);
 
 $breakpoints: (
-    small: 0px,
-    medium: 640px,
-    large: 1024px,
-    xlarge: 1440px,
+    small: 640px,
+    medium: 1024px,
+    large: 1440px
 );
 
 
@@ -242,7 +241,7 @@ nav {
 
 /*     MEDIA QUERIES     */
 
-@include rwd(xlarge){
+@include rwd(large){
     header > nav > ul > li {
         padding: 20px 40px;
     }
@@ -251,7 +250,7 @@ nav {
 
 
 
-@include rwd(large){
+@include rwd(medium){
     #menuToggleCheckbox:checked ~ ul {
         display: flex;
     }
@@ -267,10 +266,20 @@ nav {
     header {
         min-height: 55px;
 
-        & > nav > ul{
+        & > nav > ul {
             display: none;
+            z-index: 1;
+            position: relative;
             flex-direction: column;
             margin-top: $headerHeight;
+
+            li:nth-child(1) {
+                border: 1px dotted black; 
+            }
+
+            li {
+                border-bottom: 1px dotted black; 
+            }
         }
 
         & > div {
@@ -280,8 +289,20 @@ nav {
         }
     }
 
+
+    
+    .header__flags {
+        max-width: 80%;
+    }
+    
+
+
     #main-section {
         grid-template-columns: 90%;
+    }
+
+    .presentation-card__header {
+        justify-content: space-between;
     }
 }
 
