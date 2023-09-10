@@ -1,0 +1,36 @@
+/*  VARIABLES */
+
+$headerHeight: 6vh;
+$minHeaderHeight: 58px;
+$menuBackgroundColor: #222E50;
+$presentation-cardBackgroundColor: #fff;
+$color: rgb(255, 255, 255);
+$fontSize: 16px;
+$colorsPalette: ("primary": #222E50, 
+                "secondary": #007991, 
+                "third": #222E50,
+                "fourth": #222E50,
+                "fifth": #222E50);
+
+$breakpoints: (
+    small: 640px,
+    medium: 1024px,
+    large: 1440px
+);
+
+
+
+
+/*  MIXINS  */
+
+@mixin rwd($bp) {
+    @if map-has-key($breakpoints, $bp) {
+        @media screen and (max-width: map-get($breakpoints, $bp)) {
+            @content
+        }
+    } @else {
+        @media screen and (max-width: $bp) {
+            @content
+        }
+    }    
+}

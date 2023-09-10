@@ -1,0 +1,93 @@
+
+#main-section {
+    height: 94vh;
+    background-image: url(../../assets/images/homeBackground.jpg);
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-columns: 35%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.presentation-card {
+    background-color: darken($presentation-cardBackgroundColor, 5%);
+    color: rgb(44, 44, 44);
+    border-radius: 10px;
+    transition: 2s opacity;
+}
+
+.presentation-card__header {
+    background-color: $presentation-cardBackgroundColor;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px 20px 10px 20px;
+    display: flex;
+
+    div p:nth-child(1) {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: black;
+        padding-bottom: 5px;
+    }
+
+    div p:nth-child(2) {
+        font-size: 1em;
+        color: black;
+        padding-bottom: 5px;
+    }
+
+    div p:nth-child(3) {
+        font-size: 1em;
+        font-weight: bold;
+        color: black;
+        padding-bottom: 5px;
+    }
+
+    div p:nth-child(4) {
+        font-size: 0.9em;
+        color: black;
+        padding-bottom: 5px;
+    }
+
+    div p:nth-child(5) {
+        margin-top: 15px;
+
+        svg {
+            cursor: pointer;
+            margin-right: 10px;
+            fill: rgb(78, 75, 76);
+        }
+
+        .instagram-logo:hover {
+            fill: rgb(199, 37, 67);
+        }
+
+        .twitter-logo:hover {
+            fill: rgb(147, 197, 253);
+        }
+
+        .linkedin-logo:hover {
+            fill: rgb(59, 130, 246);
+        }
+
+        .github-logo:hover {
+            fill: rgb(150, 117, 201);
+        }
+
+        .youtube-logo:hover {
+            fill: rgb(255, 0, 0);;
+        }
+    }
+
+
+    div img {
+        border-radius: 10px;
+        width: 120px;
+    }
+    
+}
+
+.presentation-card__description {
+    margin: 20px;
+}
