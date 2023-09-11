@@ -1,0 +1,39 @@
+#whoami-section {
+    height: 94vh;
+    background-image: url(../../assets/images/whoamiBackground.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.whoami-container {
+    height: 84vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 85%;
+    transition: 0.5s opacity;
+
+    h2 {
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 2.5em; 
+        padding: 20px;
+        border-radius: 10px;
+        text-align: justify;;
+
+        img {
+            border-radius: 50%;
+            float: left;
+            margin-right: 20px;
+            width: 180px;
+        }
+    }
+}

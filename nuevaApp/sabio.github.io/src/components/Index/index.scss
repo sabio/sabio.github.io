@@ -1,4 +1,3 @@
-
 #main-section {
     height: 94vh;
     background-image: url(../../assets/images/homeBackground.jpg);
@@ -90,4 +89,15 @@
 
 .presentation-card__description {
     margin: 20px;
+}
+
+
+
+
+
+@include rwd(medium){
+    #main-section {
+        background-image: url(../../assets/images/homeBackground-mobile.jpg);
+    }
+    
 }

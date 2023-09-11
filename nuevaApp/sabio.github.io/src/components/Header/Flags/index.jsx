@@ -7,7 +7,7 @@ import UsaFlag from '../../../assets/images/united-states-of-america-flag-icon-3
 
 function Flags() {
     return (
-        <div class="header__flags">
+        <div className="header__flags">
             <span>
                 <img src={MxFlag} />
             </span>

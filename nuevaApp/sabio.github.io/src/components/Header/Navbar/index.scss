@@ -42,9 +42,7 @@ nav {
 /*     MEDIA QUERIES     */
 
 @include rwd(large){
-    header > nav > ul > li {
-        padding: 20px 40px;
-    }
+    // Nothing yet
 
 }
 

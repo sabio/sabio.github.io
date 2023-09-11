@@ -9,7 +9,7 @@ function Header() {
         <header>
             <Navbar />
             <Flags />
-            <label id="menuToggleIcon" for="menuToggleCheckbox">☰</label>
+            <label id="menuToggleIcon" htmlFor="menuToggleCheckbox">☰</label>
         </header>
     );
 
