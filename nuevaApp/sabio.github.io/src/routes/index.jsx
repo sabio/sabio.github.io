@@ -5,6 +5,7 @@ import {
 import Main from "../components/Main";
 import Index from "../components/Index";
 import WhoAmI from "../components/WhoAmI";
+import Experience from "../components/Experience";
 
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
             {
                 path: 'who-am-i',
                 element: <WhoAmI />
+            },
+            {
+                path: 'experience',
+                element: <Experience />
             },
         ],
     }

@@ -10,7 +10,7 @@ function Navbar() {
             <ul>
                 <li><Link to="/">Inicio</Link></li>
                 <li><Link to="/who-am-i">¿Quién soy?</Link></li>
-                <li><Link to="/who-am-i">Educación y experiencia</Link></li>
+                <li><Link to="/experience">Educación y experiencia</Link></li>
                 <li><Link to="/who-am-i">Redes sociales</Link></li>
             </ul>
         </nav>
