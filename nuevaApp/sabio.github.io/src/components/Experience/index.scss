@@ -1,23 +1,22 @@
 #experience-section {
-    height: 94vh;
-    background-image: url(../../assets/images/whoamiBackground.jpg);
+    background-color: #202020;
     background-size: 100% 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 
 
 .experience-container {
-    height: 84vh;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    width: 85%;
+    width: 70%;
     transition: 0.5s opacity;
+    
 
     h2 {
         font-size: 3em;
@@ -30,4 +29,10 @@
         text-align: justify;;
 
     }
+}
+
+
+.position, .certification, otrasActividades {
+    width: 100%;
+    font-size: 2em;
 }
