@@ -1,38 +1,105 @@
 #experience-section {
-    background-color: #202020;
-    background-size: 100% 100%;
+    background-image: url(../../assets/images/stars.jpg);
+    background-attachment: fixed;
+    background-position: 100vw 1000vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 
-
 .experience-container {
-    
+    margin-top: 45px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
     width: 70%;
     transition: 0.5s opacity;
-    
+    color: $lightColor;
 
     h2 {
         font-size: 3em;
     }
 
-    p {
+    h3 {
+        font-size: 2.5em;
+    }
+
+    .experience-first-paragraph {
         font-size: 1.5em; 
         padding: 20px;
         border-radius: 10px;
-        text-align: justify;;
+        text-align: justify;
 
+        a {
+            color: $lightColor;
+            font-size: 1em; 
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+
+    .experience-position, .experience-certification, .experience-other-activities {
+        width: 80%;
+        font-size: 2em;
+        padding: 20px;
+        background-color: $menuBackgroundColor;
+        border: 3px solid darken($menuBackgroundColor, 5%);
+        border-radius: 15px;
+        transition: 0.5s all;
+
+        &:hover {
+            animation: wiggle 0.8s linear;
+        }
+    }
+
+    .experience-position {
+
+        h4 {
+            font-size: 1em;
+        }
+
+        .fromTo {
+            margin-left: 10px;
+        }
+
+        .experience-position-short-description {
+            margin: 10px 0 10px 0;
+            font-weight: bold;
+        }
+        
+        ul {
+            list-style-type:disc;
+            margin-left: 20px;
+        }
+    }
+
+}
+
+
+@keyframes wiggle {
+    0%, 7% {
+        transform: rotateZ(0);
+    }
+    15% {
+        transform: rotateZ(-10deg);
+    }
+    20% {
+        transform: rotateZ(5deg);
+    }
+    25% {
+        transform: rotateZ(-5deg);
+    }
+    30% {
+        transform: rotateZ(6deg);
+    }
+    35% {
+        transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+        transform: rotateZ(0);
     }
 }
-
-
-.position, .certification, otrasActividades {
-    width: 100%;
-    font-size: 2em;
-}
+  
