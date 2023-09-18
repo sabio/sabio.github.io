@@ -1,11 +1,80 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './index.scss';
+import experienceJson from "../../assets/docs/experiencia_es";
+import educationJson from "../../assets/docs/educacion_es";
+import certificationsJson from "../../assets/docs/certificaciones_es";
+import otherActivitiesJson from "../../assets/docs/otrasActividades_es";
 
 function Experience() {
+    let [isOpaque, setIsOpaque] = useState(false);
+
+    useEffect(() => {
+        setTimeout(()=>setIsOpaque(true), 50);
+    }, []);
+    
+    let classForContainer = isOpaque ? "experience-container" : "experience-container opacity-zero";
+
+
+    const experienceView = experienceJson.map(item => {
+        return (
+            <div className="experience-position">
+                <h4>{item.position} - {item.company}</h4>
+                <p className="fromTo">Desde: {item.from} <br /> Hasta: {item.to}</p>
+                {item.tasks.map(task => (
+                    <>
+                        <p className="experience-position-short-description">
+                            {task.description}
+                        </p>
+                        {task.details && (
+                            <ul>
+                                {task.details.map(detail => (
+                                    <li>
+                                        {detail}
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </>
+                ))}
+            </div>
+        );
+    });
+
+    const educationView = educationJson.map(item => (
+        <div className="experience-position">
+            <h4>
+                {item.course} - {item.school}
+            </h4>
+            <p className="fromTo">
+                Desde: {item.from}
+                <br />
+                Hasta: {item.to}
+            </p>
+        </div>
+    ));
+    
+    const certificationsView = certificationsJson.map(item => 
+        <div className="experience-certification">
+            <h4>{item.code} - {item.name}</h4>
+            <p className="fromTo">Fecha: {item.date}</p>
+        </div>
+    );
+    
+    const otherActvitiesView = otherActivitiesJson.map(item => 
+        <div className="experience-other-activities">
+            <p>
+                {item.description}
+                <br />
+                <a href={item.url} target="_blank">
+                    Visitar sitio web
+                </a>
+            </p>
+        </div>
+    );
 
     return(
         <section id="experience-section">
-            <div className="experience-container">
+            <div className={classForContainer}>
                 <h2>
                     Experiencia y educación
                 </h2>
@@ -18,90 +87,23 @@ function Experience() {
                 <h3>
                     Experiencia
                 </h3>
-                <div class="experience-position">
-                    <h4>Senior Java Developer - Bitso</h4>
-                    <p class="fromTo">Desde: Julio 2021 <br /> Hasta: Presente</p>
-                    <p class="experience-position-short-description">Desarrollo y soporte de la plataforma de Bitso.</p>
-                    <ul>
-                        <li>Desarrollo de servicios REST mayormente con Spring Boot, Micronaut, entre otros.</li>
-                        <li>Uso de herramientas/tecnologías tales como Kubernetes, Docker, Git, Github, PostgreSQL, Redis, AWS, DataDog, entre otros</li>
-                        <li>Uso de metodologías ágiles.</li>
-                    </ul>
-                </div><div class="experience-position">
-                    <h4>Senior Java Developer - Bitso</h4>
-                    <p class="fromTo">Desde: Julio 2021 <br /> Hasta: Presente</p>
-                    <p class="experience-position-short-description">Desarrollo y soporte de la plataforma de Bitso.</p>
-                    <ul>
-                        <li>Desarrollo de servicios REST mayormente con Spring Boot, Micronaut, entre otros.</li>
-                        <li>Uso de herramientas/tecnologías tales como Kubernetes, Docker, Git, Github, PostgreSQL, Redis, AWS, DataDog, entre otros</li>
-                        <li>Uso de metodologías ágiles.</li>
-                    </ul>
-                </div><div class="experience-position">
-                    <h4>Senior Java Developer - Bitso</h4>
-                    <p class="fromTo">Desde: Julio 2021 <br /> Hasta: Presente</p>
-                    <p class="experience-position-short-description">Desarrollo y soporte de la plataforma de Bitso.</p>
-                    <ul>
-                        <li>Desarrollo de servicios REST mayormente con Spring Boot, Micronaut, entre otros.</li>
-                        <li>Uso de herramientas/tecnologías tales como Kubernetes, Docker, Git, Github, PostgreSQL, Redis, AWS, DataDog, entre otros</li>
-                        <li>Uso de metodologías ágiles.</li>
-                    </ul>
-                </div><div class="experience-position">
-                    <h4>Senior Java Developer - Bitso</h4>
-                    <p class="fromTo">Desde: Julio 2021 <br /> Hasta: Presente</p>
-                    <p class="experience-position-short-description">Desarrollo y soporte de la plataforma de Bitso.</p>
-                    <ul>
-                        <li>Desarrollo de servicios REST mayormente con Spring Boot, Micronaut, entre otros.</li>
-                        <li>Uso de herramientas/tecnologías tales como Kubernetes, Docker, Git, Github, PostgreSQL, Redis, AWS, DataDog, entre otros</li>
-                        <li>Uso de metodologías ágiles.</li>
-                    </ul>
-                </div><div class="experience-position">
-                    <h4>Senior Java Developer - Bitso</h4>
-                    <p class="fromTo">Desde: Julio 2021 <br /> Hasta: Presente</p>
-                    <p class="experience-position-short-description">Desarrollo y soporte de la plataforma de Bitso.</p>
-                    <ul>
-                        <li>Desarrollo de servicios REST mayormente con Spring Boot, Micronaut, entre otros.</li>
-                        <li>Uso de herramientas/tecnologías tales como Kubernetes, Docker, Git, Github, PostgreSQL, Redis, AWS, DataDog, entre otros</li>
-                        <li>Uso de metodologías ágiles.</li>
-                    </ul>
-                </div>
-                <div class="experience-position">
-                    <h4>Senior Java Developer - Bitso</h4>
-                    <p class="fromTo">Desde: Julio 2021 <br /> Hasta: Presente</p>
-                    <p class="experience-position-short-description">Desarrollo y soporte de la plataforma de Bitso.</p>
-                    <ul>
-                        <li>Desarrollo de servicios REST mayormente con Spring Boot, Micronaut, entre otros.</li>
-                        <li>Uso de herramientas/tecnologías tales como Kubernetes, Docker, Git, Github, PostgreSQL, Redis, AWS, DataDog, entre otros</li>
-                        <li>Uso de metodologías ágiles.</li>
-                    </ul>
-                </div>
+                {experienceView}
 
                 <h3>
                     Educación
                 </h3>
-                <div class="experience-position">
-                    <h4>Maestría en Tecnologías de Información - Universidad de Guadalajara</h4>
-                    <p class="fromTo">Desde: 2011<br />Hasta: 2013</p>
-                </div>
+                {educationView}
 
 
                 <h3>
                     Certificaciones
                 </h3>
-                <div class="experience-certification">
-                    <h4>1Z0-813 - Upgrade to Java SE 8 OCP</h4>
-                    <p class="fromTo">Fecha: Noviembre 2016</p>
-                </div>
+                {certificationsView}
 
                 <h3>
                     Otras actividades
                 </h3>
-                <div class="experience-other-activities">
-                    <p>
-                        App publicada en Google Play llamada Simple TCP Socket Tester. Una app en Android simple para ayudar a cualquiera que necesite probar socket TCP. 
-                        Puedes enviar y recibir cadenas de texto (UTF-8 o ISO-8859-1) o bytes sobre una red en modo cliente o servidor.<br />
-                        <a href="https://play.google.com/store/apps/details?id=com.simplesockettester" target="_blank">Visitar sitio web</a>
-                    </p>
-                </div>
+                {otherActvitiesView}
             </div>
         </section>
     );
