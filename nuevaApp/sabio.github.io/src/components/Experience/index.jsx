@@ -4,6 +4,8 @@ import experienceJson from "../../assets/docs/experiencia_es";
 import educationJson from "../../assets/docs/educacion_es";
 import certificationsJson from "../../assets/docs/certificaciones_es";
 import otherActivitiesJson from "../../assets/docs/otrasActividades_es";
+import { FormattedMessage } from 'react-intl'; 
+
 
 function Experience() {
     let [isOpaque, setIsOpaque] = useState(false);
@@ -19,7 +21,7 @@ function Experience() {
         return (
             <div className="experience-position">
                 <h4>{item.position} - {item.company}</h4>
-                <p className="fromTo">Desde: {item.from} <br /> Hasta: {item.to}</p>
+                <p className="fromTo"><FormattedMessage id="app.from" />: {item.from} <br /> <FormattedMessage id="app.to" />: {item.to}</p>
                 {item.tasks.map(task => (
                     <>
                         <p className="experience-position-short-description">
@@ -46,9 +48,9 @@ function Experience() {
                 {item.course} - {item.school}
             </h4>
             <p className="fromTo">
-                Desde: {item.from}
+                <FormattedMessage id="app.from" />: {item.from}
                 <br />
-                Hasta: {item.to}
+                <FormattedMessage id="app.to" />: {item.to}
             </p>
         </div>
     ));
@@ -56,7 +58,7 @@ function Experience() {
     const certificationsView = certificationsJson.map(item => 
         <div className="experience-certification">
             <h4>{item.code} - {item.name}</h4>
-            <p className="fromTo">Fecha: {item.date}</p>
+            <p className="fromTo"><FormattedMessage id="app.date" />: {item.date}</p>
         </div>
     );
     
@@ -66,7 +68,7 @@ function Experience() {
                 {item.description}
                 <br />
                 <a href={item.url} target="_blank">
-                    Visitar sitio web
+                    <FormattedMessage id="app.visitWebsite" />
                 </a>
             </p>
         </div>
@@ -76,32 +78,30 @@ function Experience() {
         <section id="experience-section">
             <div className={classForContainer}>
                 <h2>
-                    Experiencia y educación
+                    <FormattedMessage id="app.experience.and.education" />
                 </h2>
                 <p className="experience-first-paragraph">
-                    A continuación se muestra todo lo relacionado a mi educación y experiencia. Si lo que buscas en un CV tradicional pues dale  
-                    clic <a href="dist/docs/CVEsp.pdf" target="_blank" rel="noopener noreferrer">aquí</a> para la versión en español, 
-                    o si prefieres inglés dale clic <a href="dist/docs/CVEng.pdf" target="_blank" rel="noopener noreferrer">aquí</a>.
+                    <FormattedMessage id="app.eduandexp1" /><a href="dist/docs/CVEsp.pdf" target="_blank" rel="noopener noreferrer"><FormattedMessage id="app.here" /></a><FormattedMessage id="app.eduandexp2" /><a href="dist/docs/CVEng.pdf" target="_blank" rel="noopener noreferrer"><FormattedMessage id="app.here" /></a>.
                 </p>
 
                 <h3>
-                    Experiencia
+                    <FormattedMessage id="app.experience" />
                 </h3>
                 {experienceView}
 
                 <h3>
-                    Educación
+                    <FormattedMessage id="app.education" />
                 </h3>
                 {educationView}
 
 
                 <h3>
-                    Certificaciones
+                    <FormattedMessage id="app.certifications" />
                 </h3>
                 {certificationsView}
 
                 <h3>
-                    Otras actividades
+                    <FormattedMessage id="app.otheractivities" />
                 </h3>
                 {otherActvitiesView}
             </div>

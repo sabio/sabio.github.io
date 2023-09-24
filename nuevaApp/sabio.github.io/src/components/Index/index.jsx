@@ -25,9 +25,9 @@ function Index() {
                                     C29.414,63.332,30.664,64,32,64s2.586-0.668,3.328-1.781l16-24c0.059-0.09,0.066-0.195,0.117-0.289C54.289,34.008,56,29.219,56,24
                                     C56,10.746,45.254,0,32,0z M32,32c-4.418,0-8-3.582-8-8s3.582-8,8-8s8,3.582,8,8S36.418,32,32,32z"/>
                             </svg>
-                            GDL Mexico <FormattedMessage id="hola.mundo" />
+                            <FormattedMessage id="app.gdl.mexico" />
                         </p>
-                        <p>Senior Java Software Engineer at Bitso</p>
+                        <p><FormattedMessage id="app.current.position" /></p>
                         <p>#Java #Springboot #Micronaut #PostgreSQL #Redis #Docker #Javascript #Kafka...</p>
                         <p>
                             <svg className="instagram-logo" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +57,7 @@ function Index() {
                     </div>
                 </div>
                 <div className="presentation-card__description">
-                    Ingeniero Java Senior apasionado por la tecnologia y a las buenas practicas, con ganas de aprender cosas nuevas. Tambien se tocar algo de música.
+                    <FormattedMessage id="app.short.intro" />
                 </div>
             </article>
         </section>

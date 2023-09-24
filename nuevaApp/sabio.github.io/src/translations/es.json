@@ -1,0 +1,20 @@
+{
+    "app.gdl.mexico": "GDL México",
+    "app.current.position": "Senior Java Software Engineer en Bitso",
+    "app.short.intro": "Ingeniero Java Senior apasionado por la tecnologia y a las buenas practicas, con ganas de aprender cosas nuevas. Tambien se tocar algo de música.",
+    "app.whoami.description": "¡Que ondas! Mi nombre es Armando Gómez, soy de Guadalajara Jalisco México, aunque nacido en Maracaibo Venezuela(si, tengo ambas nacionalidades). Soy un ingeniero de software con un posgrado en Tecnologías de Información con gusto especial en las tecnologias Java. Me apasiona la tecnología, el aprendizaje continuo, el uso de mis habilidades para contruir aplicaciones chingonas que hagan un impacto positivo a las personas y a las compañias. Mis tecnologias favoritas son: Java, Spring, Micronaut, Postgresql, Redis, Javascript...... Actualmente trabajo en Bitso apoyando en el trade engine y en sistemas para el manejo de balances de los usarios. Gracias a mi pasado de musico de mariachi, se tocar varios instrumentos de mariachi tales como el violin, guitarron, vihuela, guitarra y trompeta, ah! y tambien le se al ukulele.",
+    "app.experience.and.education": "Experiencia y educación",
+    "app.here": "aquí",
+    "app.from": "Desde",
+    "app.to": "Hasta",
+    "app.date": "Fecha",
+
+    "app.eduandexp1": "A continuación se muestra todo lo relacionado a mi educación y experiencia. Si lo que buscas en un CV tradicional pues dale clic ",
+    "app.eduandexp2": " para la versión en español, o si prefieres inglés dale clic ",
+
+    "app.experience": "Experiencia",
+    "app.education": "Educación",
+    "app.certifications": "Certificaciones",
+    "app.otheractivities": "Otras actividades",
+    "app.visitWebsite": "Visitar sitio web"
+}

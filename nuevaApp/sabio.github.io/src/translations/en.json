@@ -1,0 +1,20 @@
+{
+    "app.gdl.mexico": "GDL Mexico",
+    "app.current.position": "Senior Java Software Engineer at Bitso",
+    "app.short.intro": "Senior Java Engineer passionate about technology and good practices, eager to learn new things. I also know how to play some music.",
+    "app.whoami.description": "What's up! My name is Armando Gómez, I'm from Guadalajara Jalisco Mexico but I was born in Maracaibo Venezuela (yes, I'm both Mexican and Venezuelan). I am a software engineer with a Master degree in Information Technology who loves Java technologies. I am passionate about technology, continuous learning, and using my skills to build cool applications that have a positive impact on people and companies. My favorite technologies are: Java, Spring, Micronaut, Postgresql, Redis, Python, Ruby, Javascript, React...... I'm currently working at Bitso helping in the trade engine and systems for managing user balances. I was a member of a mariachi group, so I know how to play various mariachi instruments such as violin, guitarrón, vihuela, guitar and trumpet, and I also know how to play ukulele.",
+    "app.experience.and.education": "Experience y education",
+    "app.here": "here",
+    "app.from": "From",
+    "app.to": "To",
+    "app.date": "Date",
+
+    "app.eduandexp1": "Here you can find everything related to my education and experience. If you are looking for a traditional CV, click ",
+    "app.eduandexp2": " for spanish version, or if you prefer english version click ",
+
+    "app.experience": "Experience",
+    "app.education": "Education",
+    "app.certifications": "Certifications",
+    "app.otheractivities": "Other activities",
+    "app.visitWebsite": "Visit website"
+}
