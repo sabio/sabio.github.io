@@ -37,3 +37,13 @@
         }
     }
 }
+
+
+@include rwd(medium){
+    .header__flags {
+        div {
+            width: 50%;
+        }
+    }
+    
+}
