@@ -1,4 +1,8 @@
 {
+    "app.home": "Home",
+    "app.whoami": "Who am I?",
+    "app.education.and.experience": "Education and Experience",
+    
     "app.gdl.mexico": "GDL Mexico",
     "app.current.position": "Senior Java Software Engineer at Bitso",
     "app.short.intro": "Senior Java Engineer passionate about technology and good practices, eager to learn new things. I also know how to play some music.",

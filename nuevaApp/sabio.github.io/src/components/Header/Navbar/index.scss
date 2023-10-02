@@ -41,13 +41,6 @@ nav {
 
 /*     MEDIA QUERIES     */
 
-@include rwd(large){
-    // Nothing yet
-
-}
-
-
-
 @include rwd(medium){
     #menuToggleCheckbox:checked ~ ul {
         display: flex;

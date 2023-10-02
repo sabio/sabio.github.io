@@ -21,7 +21,23 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 20px 20px 10px 20px;
-    display: flex;
+    display: grid;
+    grid-template-areas: 
+        "info picture"
+        "links links";
+
+    div:nth-child(1) {
+        grid-area: "info";
+    }
+
+    div:nth-child(2) {
+        grid-area: "picture";
+    }
+
+    div:nth-child(3) {
+        grid-area: "links";
+    }
+
 
     div p:nth-child(1) {
         font-size: 1.5em;
@@ -84,6 +100,10 @@
         border-radius: 10px;
         width: 120px;
     }
+
+    div:nth-child(3) {
+        width: 100%;
+    }
     
 }
 
@@ -98,6 +118,36 @@
 @include rwd(medium){
     #main-section {
         background-image: url(../../assets/images/homeBackground-mobile.jpg);
+        grid-template-columns: 80%;
     }
+
+    .presentation-card {
+        font-size: 2em;
+    }
+
+    .presentation-card__header {
+        div p:nth-child(5) {
+            margin-top: 15px;
     
+            .instagram-logo {
+                fill: rgb(199, 37, 67);
+            }
+    
+            .twitter-logo {
+                fill: rgb(147, 197, 253);
+            }
+    
+            .linkedin-logo {
+                fill: rgb(59, 130, 246);
+            }
+    
+            .github-logo {
+                fill: rgb(150, 117, 201);
+            }
+    
+            .youtube-logo {
+                fill: rgb(255, 0, 0);;
+            }
+        }
+    }
 }
