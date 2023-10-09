@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 50px;
+    margin-top: $minHeaderHeight;
 }
 
 
@@ -31,7 +32,6 @@
         font-size: 1.5em; 
         padding: 20px;
         border-radius: 10px;
-        text-align: justify;
 
         a {
             color: $lightColor;
@@ -64,7 +64,7 @@
     .experience-position {
 
         h4 {
-            font-size: 1em;
+            font-size: 0.8em;
         }
 
         .fromTo {
@@ -82,6 +82,32 @@
         }
     }
 
+    .experience-certification {
+        h4 {
+            font-size: 0.8em;
+        }
+    }
+
+}
+
+
+@include rwd(medium){
+    .experience-container{
+        width: 100%;
+
+        h2 {
+            font-size: 2em;
+        }
+
+        
+        h3 {
+            font-size: 2em;
+        }
+        
+        .experience-position, .experience-certification, .experience-other-activities {
+            width: 90%;
+        }
+    }
 }
 
 

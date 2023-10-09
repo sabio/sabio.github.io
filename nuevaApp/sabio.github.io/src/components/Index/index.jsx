@@ -19,6 +19,8 @@ function Index() {
                 <div className="presentation-card__header">
                     <div>
                         <p>Armando Gomez</p>
+                    </div>
+                    <div>
                         <p>
                             <svg width="13px" height="13px" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"viewBox="0 0 64 64" enableBackground="new 0 0 64 64" xmlSpace="preserve">
                                 <path fill="#231F20" d="M32,0C18.746,0,8,10.746,8,24c0,5.219,1.711,10.008,4.555,13.93c0.051,0.094,0.059,0.199,0.117,0.289l16,24

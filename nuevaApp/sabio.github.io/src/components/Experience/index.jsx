@@ -4,6 +4,8 @@ import experienceJson from "../../assets/docs/experiencia_es";
 import educationJson from "../../assets/docs/educacion_es";
 import certificationsJson from "../../assets/docs/certificaciones_es";
 import otherActivitiesJson from "../../assets/docs/otrasActividades_es";
+import cvIngles from '../../assets/docs/CVEng.pdf'
+import cvEspanol from '../../assets/docs/CVEsp.pdf'
 import { FormattedMessage } from 'react-intl'; 
 
 
@@ -81,7 +83,7 @@ function Experience() {
                     <FormattedMessage id="app.experience.and.education" />
                 </h2>
                 <p className="experience-first-paragraph">
-                    <FormattedMessage id="app.eduandexp1" /><a href="dist/docs/CVEsp.pdf" target="_blank" rel="noopener noreferrer"><FormattedMessage id="app.here" /></a><FormattedMessage id="app.eduandexp2" /><a href="dist/docs/CVEng.pdf" target="_blank" rel="noopener noreferrer"><FormattedMessage id="app.here" /></a>.
+                    <FormattedMessage id="app.eduandexp1" /><a href={cvEspanol} target="_blank" rel="noopener noreferrer"><FormattedMessage id="app.here" /></a><FormattedMessage id="app.eduandexp2" /><a href={cvIngles} target="_blank" rel="noopener noreferrer"><FormattedMessage id="app.here" /></a>.
                 </p>
 
                 <h3>
