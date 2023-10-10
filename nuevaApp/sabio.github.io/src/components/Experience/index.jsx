@@ -1,16 +1,35 @@
 import React, { useEffect, useState } from "react";
 import './index.scss';
-import experienceJson from "../../assets/docs/experiencia_es";
-import educationJson from "../../assets/docs/educacion_es";
-import certificationsJson from "../../assets/docs/certificaciones_es";
-import otherActivitiesJson from "../../assets/docs/otrasActividades_es";
+import useLanguage from "../../state/language";
+
+import experienceJsonEs from "../../assets/docs/experiencia_es";
+import educationJsonEs from "../../assets/docs/educacion_es";
+import certificationsJsonEs from "../../assets/docs/certificaciones_es";
+import otherActivitiesJsonEs from "../../assets/docs/otrasActividades_es";
+import experienceJsonEn from "../../assets/docs/experiencia_en";
+import educationJsonEn from "../../assets/docs/educacion_en";
+import certificationsJsonEn from "../../assets/docs/certificaciones_en";
+import otherActivitiesJsonEn from "../../assets/docs/otrasActividades_en";
+
 import cvIngles from '../../assets/docs/CVEng.pdf'
 import cvEspanol from '../../assets/docs/CVEsp.pdf'
 import { FormattedMessage } from 'react-intl'; 
 
 
+const jsons = {}
+jsons['experienceJson_es'] = experienceJsonEs
+jsons['educationJson_es'] = educationJsonEs
+jsons['certificationsJson_es'] = certificationsJsonEs
+jsons['otherActivitiesJson_es'] = otherActivitiesJsonEs
+jsons['experienceJson_en'] = experienceJsonEn
+jsons['educationJson_en'] = educationJsonEn
+jsons['certificationsJson_en'] = certificationsJsonEn
+jsons['otherActivitiesJson_en'] = otherActivitiesJsonEn
+
+
 function Experience() {
     let [isOpaque, setIsOpaque] = useState(false);
+    const { language } = useLanguage(); 
 
     useEffect(() => {
         setTimeout(()=>setIsOpaque(true), 50);
@@ -19,7 +38,7 @@ function Experience() {
     let classForContainer = isOpaque ? "experience-container" : "experience-container opacity-zero";
 
 
-    const experienceView = experienceJson.map(item => {
+    const experienceView = jsons['experienceJson_'+language].map(item => {
         return (
             <div className="experience-position">
                 <h4>{item.position} - {item.company}</h4>
@@ -44,7 +63,7 @@ function Experience() {
         );
     });
 
-    const educationView = educationJson.map(item => (
+    const educationView = jsons['educationJson_'+language].map(item => (
         <div className="experience-position">
             <h4>
                 {item.course} - {item.school}
@@ -57,14 +76,14 @@ function Experience() {
         </div>
     ));
     
-    const certificationsView = certificationsJson.map(item => 
+    const certificationsView = jsons['certificationsJson_'+language].map(item => 
         <div className="experience-certification">
             <h4>{item.code} - {item.name}</h4>
             <p className="fromTo"><FormattedMessage id="app.date" />: {item.date}</p>
         </div>
     );
     
-    const otherActvitiesView = otherActivitiesJson.map(item => 
+    const otherActvitiesView = jsons['otherActivitiesJson_'+language].map(item => 
         <div className="experience-other-activities">
             <p>
                 {item.description}
