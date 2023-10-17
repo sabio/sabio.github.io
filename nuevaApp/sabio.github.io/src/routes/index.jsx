@@ -1,5 +1,5 @@
 import {
-    createBrowserRouter,
+    createHashRouter,
     RouterProvider
 } from "react-router-dom";
 import Main from "../components/Main";
@@ -8,7 +8,7 @@ import WhoAmI from "../components/WhoAmI";
 import Experience from "../components/Experience";
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: '/',
         element: <Main />,
