@@ -1,6 +1,6 @@
 const jsonExperiencia = [
   {
-    position: 'Senior Java Developer',
+    position: 'Java Developer',
     company: 'Bitso',
     from: 'July 2021',
     to: 'Present',
@@ -8,7 +8,7 @@ const jsonExperiencia = [
       {
         description: 'Development and maintenance of the Bitso platform.',
         details: [
-          'Development of REST services mostly in Spring Boot, Micronaut, among others.',
+          'Development of gRPC and REST services in Spring Boot and  Micronaut',
           'Use of tools/technologies such as Kubernetes, Docker, Git, Github, PostgreSQL, Redis, AWS, DataDog, among others.',
           'Use of agile methodologies.',
         ],
